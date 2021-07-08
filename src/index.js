@@ -34,7 +34,8 @@ const styleHTML = `
 `;
 
 function addColor(url, color) {
-    return url.replace('%3e', ` fill=\'${color}\' stroke=\'${color}\'%3e`);
+    const encodedColor = color.replace('#', '%23');
+    return url.replace('%3e', ` fill=\'${encodedColor}\' stroke=\'${encodedColor}\'%3e`);
 }
 
 // Add style
