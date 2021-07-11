@@ -647,7 +647,378 @@
 			"zh-Hans": "乒乓球",
 			"zh-Hant": "乒乓球"
 		},
-		"icon": "table-tennis"
+		"icon": "table-tennis",
+		"schedule": [{
+			"date": "2021-07-24",
+			"start": "9:00",
+			"end": "12:45",
+			"events": [{
+				"en": "Men's Singles Preliminary Round",
+				"ja": "男子シングルス予選"
+			}, {
+				"en": "Women's Singles Preliminary Round",
+				"ja": "女子シングルス予選"
+			}, {
+				"en": "Mixed Doubles Round of 16",
+				"ja": "混合ダブルス1回戦"
+			}]
+		}, {
+			"date": "2021-07-24",
+			"start": "14:15",
+			"end": "17:15",
+			"events": [{
+				"en": "Men's Singles Round 1",
+				"ja": "男子シングルス1回戦"
+			}, {
+				"en": "Women's Singles Round 1",
+				"ja": "女子シングルス1回戦"
+			}]
+		}, {
+			"date": "2021-07-24",
+			"start": "19:30",
+			"end": "22:30",
+			"events": [{
+				"en": "Men's Singles Round 1",
+				"ja": "男子シングルス1回戦"
+			}, {
+				"en": "Women's Singles Round 1",
+				"ja": "女子シングルス1回戦"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "10:00",
+			"end": "12:00",
+			"events": [{
+				"en": "Mixed Doubles Quarterfinals",
+				"ja": "混合ダブルス準々決勝"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "14:00",
+			"end": "17:45",
+			"events": [{
+				"en": "Men's Singles Round 2",
+				"ja": "男子シングルス2回戦"
+			}, {
+				"en": "Women's Singles Round 2",
+				"ja": "女子シングルス2回戦"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "20:00",
+			"end": "22:00",
+			"events": [{
+				"en": "Mixed Doubles Semifinals",
+				"ja": "混合ダブルス準決勝"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "10:00",
+			"end": "13:00",
+			"events": [{
+				"en": "Men's Singles Round 2",
+				"ja": "男子シングルス2回戦"
+			}, {
+				"en": "Women's Singles Round 2",
+				"ja": "女子シングルス2回戦"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "14:30",
+			"end": "17:30",
+			"events": [{
+				"en": "Men's Singles Round 3",
+				"ja": "男子シングルス3回戦"
+			}, {
+				"en": "Women's Singles Round 3",
+				"ja": "女子シングルス3回戦"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "20:00",
+			"end": "22:10",
+			"events": [{
+				"en": "Mixed Doubles Bronze Medal Match",
+				"ja": "混合ダブルス3位決定戦"
+			}, {
+				"en": "Mixed Doubles Gold Medal Match",
+				"ja": "混合ダブルス決勝戦"
+			}, {
+				"en": "Mixed Doubles Victory Ceremony",
+				"ja": "混合ダブルス表彰式"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "10:00",
+			"end": "13:00",
+			"events": [{
+				"en": "Men's Singles Round 3",
+				"ja": "男子シングルス3回戦"
+			}, {
+				"en": "Women's Singles Round 3",
+				"ja": "女子シングルス3回戦"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "14:30",
+			"end": "17:30",
+			"events": [{
+				"en": "Men's Singles Round 3",
+				"ja": "男子シングルス3回戦"
+			}, {
+				"en": "Women's Singles Round 3",
+				"ja": "女子シングルス3回戦"
+			}, {
+				"en": "Men's Singles Round of 16",
+				"ja": "男子シングルス4回戦"
+			}, {
+				"en": "Women's Singles Round of 16",
+				"ja": "女子シングルス4回戦"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "19:30",
+			"end": "22:30",
+			"events": [{
+				"en": "Men's Singles Round of 16",
+				"ja": "男子シングルス4回戦"
+			}, {
+				"en": "Women's Singles Round of 16",
+				"ja": "女子シングルス4回戦"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "10:00",
+			"end": "13:00",
+			"events": [{
+				"en": "Women's Singles Quarterfinals",
+				"ja": "女子シングルス準々決勝"
+			}, {
+				"en": "Men's Singles Quarterfinals",
+				"ja": "男子シングルス準々決勝"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "15:00",
+			"end": "18:00",
+			"events": [{
+				"en": "Women's Singles Quarterfinals",
+				"ja": "女子シングルス準々決勝"
+			}, {
+				"en": "Men's Singles Quarterfinals",
+				"ja": "男子シングルス準々決勝"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "20:00",
+			"end": "22:00",
+			"events": [{
+				"en": "Men's Singles Quarterfinals",
+				"ja": "男子シングルス準々決勝"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "11:00",
+			"end": "13:00",
+			"events": [{
+				"en": "Women's Singles Semifinals",
+				"ja": "女子シングルス準決勝"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "15:00",
+			"end": "17:00",
+			"events": [{
+				"en": "Men's Singles Semifinals",
+				"ja": "男子シングルス準決勝"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "20:00",
+			"end": "22:10",
+			"events": [{
+				"en": "Women's Singles Bronze Medal Match",
+				"ja": "女子シングルス3位決定戦"
+			}, {
+				"en": "Women's Singles Gold Medal Match",
+				"ja": "女子シングルス決勝戦"
+			}, {
+				"en": "Women's Singles Victory Ceremony",
+				"ja": "女子シングルス表彰式"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "20:00",
+			"end": "22:10",
+			"events": [{
+				"en": "Men's Singles Bronze Medal Match",
+				"ja": "男子シングルス3位決定戦"
+			}, {
+				"en": "Men's Singles Gold Medal Match",
+				"ja": "男子シングルス決勝戦"
+			}, {
+				"en": "Men's Singles Victory Ceremony",
+				"ja": "男子シングルス表彰式"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "10:00",
+			"end": "13:00",
+			"events": [{
+				"en": "Men's Team Round of 16",
+				"ja": "男子団体1回戦"
+			}, {
+				"en": "Women's Team Round of 16",
+				"ja": "女子団体1回戦"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "14:30",
+			"end": "17:30",
+			"events": [{
+				"en": "Men's Team Round of 16",
+				"ja": "男子団体1回戦"
+			}, {
+				"en": "Women's Team Round of 16",
+				"ja": "女子団体1回戦"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "19:30",
+			"end": "22:30",
+			"events": [{
+				"en": "Men's Team Round of 16",
+				"ja": "男子団体1回戦"
+			}, {
+				"en": "Women's Team Round of 16",
+				"ja": "女子団体1回戦"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "10:00",
+			"end": "13:00",
+			"events": [{
+				"en": "Men's Team Round of 16",
+				"ja": "男子団体1回戦"
+			}, {
+				"en": "Women's Team Round of 16",
+				"ja": "女子団体1回戦"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "14:30",
+			"end": "17:30",
+			"events": [{
+				"en": "Men's Team Quarterfinals",
+				"ja": "男子団体準々決勝"
+			}, {
+				"en": "Women's Team Quarterfinals",
+				"ja": "女子団体準々決勝"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "19:30",
+			"end": "22:30",
+			"events": [{
+				"en": "Men's Team Quarterfinals",
+				"ja": "男子団体準々決勝"
+			}, {
+				"en": "Women's Team Quarterfinals",
+				"ja": "女子団体準々決勝"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "10:00",
+			"end": "13:00",
+			"events": [{
+				"en": "Men's Team Quarterfinals",
+				"ja": "男子団体準々決勝"
+			}, {
+				"en": "Women's Team Quarterfinals",
+				"ja": "女子団体準々決勝"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "14:30",
+			"end": "17:30",
+			"events": [{
+				"en": "Men's Team Quarterfinals",
+				"ja": "男子団体準々決勝"
+			}, {
+				"en": "Women's Team Quarterfinals",
+				"ja": "女子団体準々決勝"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "19:30",
+			"end": "22:30",
+			"events": [{
+				"en": "Women's Team Semifinals",
+				"ja": "女子団体準決勝"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "10:00",
+			"end": "13:00",
+			"events": [{
+				"en": "Women's Team Semifinals",
+				"ja": "女子団体準決勝"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "14:30",
+			"end": "17:30",
+			"events": [{
+				"en": "Men's Team Semifinals",
+				"ja": "男子団体準決勝"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "19:30",
+			"end": "22:30",
+			"events": [{
+				"en": "Men's Team Semifinals",
+				"ja": "男子団体準決勝"
+			}]
+		}, {
+			"date": "2021-08-05",
+			"start": "11:00",
+			"end": "14:00",
+			"events": [{
+				"en": "Women's Team Bronze Medal Team Match",
+				"ja": "女子団体3位決定戦"
+			}]
+		}, {
+			"date": "2021-08-05",
+			"start": "19:30",
+			"end": "22:40",
+			"events": [{
+				"en": "Women's Team Gold Medal Team Match",
+				"ja": "女子団体決勝戦"
+			}, {
+				"en": "Women's Team Victory Ceremony",
+				"ja": "女子団体表彰式"
+			}]
+		}, {
+			"date": "2021-08-06",
+			"start": "11:00",
+			"end": "14:00",
+			"events": [{
+				"en": "Men's Team Bronze Medal Team Match",
+				"ja": "男子団体3位決定戦"
+			}]
+		}, {
+			"date": "2021-08-06",
+			"start": "19:30",
+			"end": "22:40",
+			"events": [{
+				"en": "Men's Team Gold Medal Team Match",
+				"ja": "男子団体決勝戦"
+			}, {
+				"en": "Men's Team Victory Ceremony",
+				"ja": "男子団体表彰式"
+			}]
+		}]
 	}],
 	"thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/T%C5%8Dky%C5%8D_Taiikukan_Japan.jpg/300px-T%C5%8Dky%C5%8D_Taiikukan_Japan.jpg",
 	"center": [139.71123, 35.6791],
@@ -673,7 +1044,472 @@
 			"zh-Hans": "手球",
 			"zh-Hant": "手球"
 		},
-		"icon": "handball"
+		"icon": "handball",
+		"schedule": [{
+			"date": "2021-07-24",
+			"start": "9:00",
+			"end": "12:30",
+			"events": [{
+				"en": "Men's Preliminary Round Group A, Norway vs Brazil",
+				"ja": "男子予選ラウンド - グループA ノルウェー vs ブラジル"
+			}, {
+				"en": "Men's Preliminary Round Group A, France vs Argentina",
+				"ja": "男子予選ラウンド - グループA フランス vs アルゼンチン"
+			}]
+		}, {
+			"date": "2021-07-24",
+			"start": "14:15",
+			"end": "17:45",
+			"events": [{
+				"en": "Men's Preliminary Round Group B, Sweden vs Bahrain",
+				"ja": "男子予選ラウンド - グループB スウェーデン vs バーレーン"
+			}, {
+				"en": "Men's Preliminary Round Group A, Germany vs Spain",
+				"ja": "男子予選ラウンド - グループA ドイツ vs スペイン"
+			}]
+		}, {
+			"date": "2021-07-24",
+			"start": "19:30",
+			"end": "23:00",
+			"events": [{
+				"en": "Men's Preliminary Round Group B, Portugal vs Egypt",
+				"ja": "男子予選ラウンド - グループB ポルトガル vs エジプト"
+			}, {
+				"en": "Men's Preliminary Round Group B, Denmark vs Japan",
+				"ja": "男子予選ラウンド - グループB デンマーク vs 日本"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "9:00",
+			"end": "12:30",
+			"events": [{
+				"en": "Women's Preliminary Round Group A, Netherlands vs Japan",
+				"ja": "女子予選ラウンド - グループA オランダ vs 日本"
+			}, {
+				"en": "Women's Preliminary Round Group B, ROC vs Brazil",
+				"ja": "女子予選ラウンド - グループB ROC vs ブラジル"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "14:15",
+			"end": "17:45",
+			"events": [{
+				"en": "Women's Preliminary Round Group A, Montenegro vs Angola",
+				"ja": "女子予選ラウンド - グループA モンテネグロ vs アンゴラ"
+			}, {
+				"en": "Women's Preliminary Round Group A, Norway vs Republic of Korea",
+				"ja": "女子予選ラウンド - グループA ノルウェー vs 大韓民国"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "19:30",
+			"end": "23:00",
+			"events": [{
+				"en": "Women's Preliminary Round Group B, Spain vs Sweden",
+				"ja": "女子予選ラウンド - グループB スペイン vs スウェーデン"
+			}, {
+				"en": "Women's Preliminary Round Group B, Hungary vs France",
+				"ja": "女子予選ラウンド - グループB ハンガリー vs フランス"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "9:00",
+			"end": "12:30",
+			"events": [{
+				"en": "Men's Preliminary Round Group A, Brazil vs France",
+				"ja": "男子予選ラウンド - グループA ブラジル vs フランス"
+			}, {
+				"en": "Men's Preliminary Round Group A, Argentina vs Germany",
+				"ja": "男子予選ラウンド - グループA アルゼンチン vs ドイツ"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "14:15",
+			"end": "17:45",
+			"events": [{
+				"en": "Men's Preliminary Round Group B, Egypt vs Denmark",
+				"ja": "男子予選ラウンド - グループB エジプト vs デンマーク"
+			}, {
+				"en": "Men's Preliminary Round Group A, Spain vs Norway",
+				"ja": "男子予選ラウンド - グループA スペイン vs ノルウェー"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "19:30",
+			"end": "23:00",
+			"events": [{
+				"en": "Men's Preliminary Round Group B, Bahrain vs Portugal",
+				"ja": "男子予選ラウンド - グループB バーレーン vs ポルトガル"
+			}, {
+				"en": "Men's Preliminary Round Group B, Japan vs Sweden",
+				"ja": "男子予選ラウンド - グループB 日本 vs スウェーデン"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "9:00",
+			"end": "12:30",
+			"events": [{
+				"en": "Women's Preliminary Round Group A, Japan vs Montenegro",
+				"ja": "女子予選ラウンド - グループA 日本 vs モンテネグロ"
+			}, {
+				"en": "Women's Preliminary Round Group B, Brazil vs Hungary",
+				"ja": "女子予選ラウンド - グループB ブラジル vs ハンガリー"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "14:15",
+			"end": "17:45",
+			"events": [{
+				"en": "Women's Preliminary Round Group B, Sweden vs ROC",
+				"ja": "女子予選ラウンド - グループB スウェーデン vs ROC"
+			}, {
+				"en": "Women's Preliminary Round Group A, Republic of Korea vs Netherlands",
+				"ja": "女子予選ラウンド - グループA 大韓民国 vs オランダ"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "19:30",
+			"end": "23:00",
+			"events": [{
+				"en": "Women's Preliminary Round Group A, Angola vs Norway",
+				"ja": "女子予選ラウンド - グループA アンゴラ vs ノルウェー"
+			}, {
+				"en": "Women's Preliminary Round Group B, France vs Spain",
+				"ja": "女子予選ラウンド - グループB フランス vs スペイン"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "9:00",
+			"end": "12:30",
+			"events": [{
+				"en": "Men's Preliminary Round Group B, Denmark vs Bahrain",
+				"ja": "男子予選ラウンド - グループB デンマーク vs バーレーン"
+			}, {
+				"en": "Men's Preliminary Round Group B, Sweden vs Portugal",
+				"ja": "男子予選ラウンド - グループB スウェーデン vs ポルトガル"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "14:15",
+			"end": "17:45",
+			"events": [{
+				"en": "Men's Preliminary Round Group B, Japan vs Egypt",
+				"ja": "男子予選ラウンド - グループB 日本 vs エジプト"
+			}, {
+				"en": "Men's Preliminary Round Group A, Norway vs Argentina",
+				"ja": "男子予選ラウンド - グループA ノルウェー vs アルゼンチン"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "19:30",
+			"end": "23:00",
+			"events": [{
+				"en": "Men's Preliminary Round Group A, Brazil vs Spain",
+				"ja": "男子予選ラウンド - グループA ブラジル vs スペイン"
+			}, {
+				"en": "Men's Preliminary Round Group A, France vs Germany",
+				"ja": "男子予選ラウンド - グループA フランス vs ドイツ"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "9:00",
+			"end": "12:30",
+			"events": [{
+				"en": "Women's Preliminary Round Group A, Netherlands vs Angola",
+				"ja": "女子予選ラウンド - グループA オランダ vs アンゴラ"
+			}, {
+				"en": "Women's Preliminary Round Group B, Spain vs Brazil",
+				"ja": "女子予選ラウンド - グループB スペイン vs ブラジル"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "14:15",
+			"end": "17:45",
+			"events": [{
+				"en": "Women's Preliminary Round Group A, Japan vs Republic of Korea",
+				"ja": "女子予選ラウンド - グループA 日本 vs 大韓民国"
+			}, {
+				"en": "Women's Preliminary Round Group A, Montenegro vs Norway",
+				"ja": "女子予選ラウンド - グループA モンテネグロ vs ノルウェー"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "19:30",
+			"end": "23:00",
+			"events": [{
+				"en": "Women's Preliminary Round Group B, Hungary vs ROC",
+				"ja": "女子予選ラウンド - グループB ハンガリー vs ROC"
+			}, {
+				"en": "Women's Preliminary Round Group B, Sweden vs France",
+				"ja": "女子予選ラウンド - グループB スウェーデン vs フランス"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "9:00",
+			"end": "12:30",
+			"events": [{
+				"en": "Men's Preliminary Round Group A, Argentina vs Brazil",
+				"ja": "男子予選ラウンド - グループA アルゼンチン vs ブラジル"
+			}, {
+				"en": "Men's Preliminary Round Group B, Bahrain vs Japan",
+				"ja": "男子予選ラウンド - グループB バーレーン vs 日本"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "14:15",
+			"end": "17:45",
+			"events": [{
+				"en": "Men's Preliminary Round Group A, France vs Spain",
+				"ja": "男子予選ラウンド - グループA フランス vs スペイン"
+			}, {
+				"en": "Men's Preliminary Round Group B, Sweden vs Egypt",
+				"ja": "男子予選ラウンド - グループB スウェーデン vs エジプト"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "19:30",
+			"end": "23:00",
+			"events": [{
+				"en": "Men's Preliminary Round Group B, Portugal vs Denmark",
+				"ja": "男子予選ラウンド - グループB ポルトガル vs デンマーク"
+			}, {
+				"en": "Men's Preliminary Round Group A, Germany vs Norway",
+				"ja": "男子予選ラウンド - グループA ドイツ vs ノルウェー"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "9:00",
+			"end": "12:30",
+			"events": [{
+				"en": "Women's Preliminary Round Group A, Angola vs Japan",
+				"ja": "女子予選ラウンド - グループA アンゴラ vs 日本"
+			}, {
+				"en": "Women's Preliminary Round Group A, Montenegro vs Republic of Korea",
+				"ja": "女子予選ラウンド - グループA モンテネグロ vs 大韓民国"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "14:15",
+			"end": "17:45",
+			"events": [{
+				"en": "Women's Preliminary Round Group B, ROC vs France",
+				"ja": "女子予選ラウンド - グループB ROC vs フランス"
+			}, {
+				"en": "Women's Preliminary Round Group B, Brazil vs Sweden",
+				"ja": "女子予選ラウンド - グループB ブラジル vs スウェーデン"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "19:30",
+			"end": "23:00",
+			"events": [{
+				"en": "Women's Preliminary Round Group B, Hungary vs Spain",
+				"ja": "女子予選ラウンド - グループB ハンガリー vs スペイン"
+			}, {
+				"en": "Women's Preliminary Round Group A, Norway vs Netherlands",
+				"ja": "女子予選ラウンド - グループA ノルウェー vs オランダ"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "9:00",
+			"end": "12:30",
+			"events": [{
+				"en": "Men's Preliminary Round Group B, Portugal vs Japan",
+				"ja": "男子予選ラウンド - グループB ポルトガル vs 日本"
+			}, {
+				"en": "Men's Preliminary Round Group B, Egypt vs Bahrain",
+				"ja": "男子予選ラウンド - グループB エジプト vs バーレーン"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "14:15",
+			"end": "17:45",
+			"events": [{
+				"en": "Men's Preliminary Round Group A, Spain vs Argentina",
+				"ja": "男子予選ラウンド - グループA スペイン vs アルゼンチン"
+			}, {
+				"en": "Men's Preliminary Round Group A, Norway vs France",
+				"ja": "男子予選ラウンド - グループA ノルウェー vs フランス"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "19:30",
+			"end": "23:00",
+			"events": [{
+				"en": "Men's Preliminary Round Group A, Germany vs Brazil",
+				"ja": "男子予選ラウンド - グループA ドイツ vs ブラジル"
+			}, {
+				"en": "Men's Preliminary Round Group B, Denmark vs Sweden",
+				"ja": "男子予選ラウンド - グループB デンマーク vs スウェーデン"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "9:00",
+			"end": "12:30",
+			"events": [{
+				"en": "Women's Preliminary Round Group A, Republic of Korea vs Angola",
+				"ja": "女子予選ラウンド - グループA 大韓民国 vs アンゴラ"
+			}, {
+				"en": "Women's Preliminary Round Group B, France vs Brazil",
+				"ja": "女子予選ラウンド - グループB フランス vs ブラジル"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "14:15",
+			"end": "17:45",
+			"events": [{
+				"en": "Women's Preliminary Round Group B, Spain vs ROC",
+				"ja": "女子予選ラウンド - グループB スペイン vs ROC"
+			}, {
+				"en": "Women's Preliminary Round Group B, Hungary vs Sweden",
+				"ja": "女子予選ラウンド - グループB ハンガリー vs スウェーデン"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "19:30",
+			"end": "23:00",
+			"events": [{
+				"en": "Women's Preliminary Round Group A, Netherlands vs Montenegro",
+				"ja": "女子予選ラウンド - グループA オランダ vs モンテネグロ"
+			}, {
+				"en": "Women's Preliminary Round Group A, Norway vs Japan",
+				"ja": "女子予選ラウンド - グループA ノルウェー vs 日本"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "9:30",
+			"end": "11:30",
+			"events": [{
+				"en": "Men's Quarterfinal",
+				"ja": "男子準々決勝"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "13:15",
+			"end": "15:15",
+			"events": [{
+				"en": "Men's Quarterfinal",
+				"ja": "男子準々決勝"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "17:00",
+			"end": "19:00",
+			"events": [{
+				"en": "Men's Quarterfinal",
+				"ja": "男子準々決勝"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "20:45",
+			"end": "22:45",
+			"events": [{
+				"en": "Men's Quarterfinal",
+				"ja": "男子準々決勝"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "9:30",
+			"end": "11:30",
+			"events": [{
+				"en": "Women's Quarterfinal",
+				"ja": "女子準々決勝"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "13:15",
+			"end": "15:15",
+			"events": [{
+				"en": "Women's Quarterfinal",
+				"ja": "女子準々決勝"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "17:00",
+			"end": "19:00",
+			"events": [{
+				"en": "Women's Quarterfinal",
+				"ja": "女子準々決勝"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "20:45",
+			"end": "22:45",
+			"events": [{
+				"en": "Women's Quarterfinal",
+				"ja": "女子準々決勝"
+			}]
+		}, {
+			"date": "2021-08-05",
+			"start": "17:00",
+			"end": "19:00",
+			"events": [{
+				"en": "Men's Semifinal",
+				"ja": "男子準決勝"
+			}]
+		}, {
+			"date": "2021-08-05",
+			"start": "21:00",
+			"end": "23:00",
+			"events": [{
+				"en": "Men's Semifinal",
+				"ja": "男子準決勝"
+			}]
+		}, {
+			"date": "2021-08-06",
+			"start": "17:00",
+			"end": "19:00",
+			"events": [{
+				"en": "Women's Semifinal",
+				"ja": "女子準決勝"
+			}]
+		}, {
+			"date": "2021-08-06",
+			"start": "21:00",
+			"end": "23:00",
+			"events": [{
+				"en": "Women's Semifinal",
+				"ja": "女子準決勝"
+			}]
+		}, {
+			"date": "2021-08-07",
+			"start": "17:00",
+			"end": "19:00",
+			"events": [{
+				"en": "Men's Bronze Medal Match",
+				"ja": "男子3位決定戦"
+			}]
+		}, {
+			"date": "2021-08-07",
+			"start": "21:00",
+			"end": "23:30",
+			"events": [{
+				"en": "Men's Gold Medal Match",
+				"ja": "男子決勝戦"
+			}, {
+				"en": "Men's Victory Ceremony",
+				"ja": "男子表彰式"
+			}]
+		}, {
+			"date": "2021-08-08",
+			"start": "11:00",
+			"end": "13:00",
+			"events": [{
+				"en": "Women's Bronze Medal Match",
+				"ja": "女子3位決定戦"
+			}]
+		}, {
+			"date": "2021-08-08",
+			"start": "15:00",
+			"end": "17:30",
+			"events": [{
+				"en": "Women's Gold Medal Match",
+				"ja": "女子決勝戦"
+			}, {
+				"en": "Women's Victory Ceremony",
+				"ja": "女子表彰式"
+			}]
+		}]
 	}],
 	"thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Yoyogi-National-First-Gymnasium-01.jpg/300px-Yoyogi-National-First-Gymnasium-01.jpg",
 	"center": [139.70014, 35.66759],
@@ -2025,7 +2861,125 @@
 			"zh-Hans": "马术",
 			"zh-Hant": "馬術"
 		},
-		"icon": "equestrian"
+		"icon": "equestrian",
+		"schedule": [{
+			"date": "2021-07-24",
+			"start": "17:00",
+			"end": "22:15",
+			"events": [{
+				"en": "Dressage Grand Prix Team and Individual Day 1",
+				"ja": "馬場馬術団体兼個人グランプリ 1日目"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "17:00",
+			"end": "22:15",
+			"events": [{
+				"en": "Dressage Grand Prix Team and Individual Day 2",
+				"ja": "馬場馬術団体兼個人グランプリ 2日目"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "17:00",
+			"end": "22:40",
+			"events": [{
+				"en": "Dressage Team Grand Prix Special",
+				"ja": "馬場馬術団体グランプリスペシャル"
+			}, {
+				"en": "Dressage Team Victory Ceremony",
+				"ja": "馬場馬術団体表彰式"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "17:30",
+			"end": "21:25",
+			"events": [{
+				"en": "Dressage Individual Grand Prix Freestyle",
+				"ja": "馬場馬術個人グランプリフリースタイル"
+			}, {
+				"en": "Dressage Individual Victory Ceremony",
+				"ja": "馬場馬術個人表彰式"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "8:30",
+			"end": "11:00",
+			"events": [{
+				"en": "Eventing Dressage Team and Individual Day 1 - Session 1",
+				"ja": "総合馬術馬場団体兼個人 1日目 - 1組"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "17:30",
+			"end": "20:10",
+			"events": [{
+				"en": "Eventing Dressage Team and Individual Day 1 - Session 2",
+				"ja": "総合馬術馬場団体兼個人 1日目 - 2組"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "8:30",
+			"end": "11:00",
+			"events": [{
+				"en": "Eventing Dressage Team and Individual Day 2 - Session 3",
+				"ja": "総合馬術馬場団体兼個人 2日目 - 3組"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "17:00",
+			"end": "22:25",
+			"events": [{
+				"en": "Eventing Jumping Team Final and Individual Qualifier",
+				"ja": "総合馬術障害団体決勝及び個人予選"
+			}, {
+				"en": "Eventing Jumping Individual Final",
+				"ja": "総合馬術障害個人決勝"
+			}, {
+				"en": "Eventing Team Victory Ceremony",
+				"ja": "総合馬術団体表彰式"
+			}, {
+				"en": "Eventing Individual Victory Ceremony",
+				"ja": "総合馬術個人表彰式"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "19:00",
+			"end": "22:45",
+			"events": [{
+				"en": "Jumping Individual Qualifier",
+				"ja": "障害馬術個人予選"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "19:00",
+			"end": "21:40",
+			"events": [{
+				"en": "Jumping Individual Final",
+				"ja": "障害馬術個人決勝"
+			}, {
+				"en": "Jumping Individual Victory Ceremony",
+				"ja": "障害馬術個人表彰式"
+			}]
+		}, {
+			"date": "2021-08-06",
+			"start": "19:00",
+			"end": "22:05",
+			"events": [{
+				"en": "Jumping Team Qualifier",
+				"ja": "障害馬術団体予選"
+			}]
+		}, {
+			"date": "2021-08-07",
+			"start": "19:00",
+			"end": "21:30",
+			"events": [{
+				"en": "Jumping Team Final",
+				"ja": "障害馬術団体決勝"
+			}, {
+				"en": "Jumping Team Victory Ceremony",
+				"ja": "障害馬術団体表彰式"
+			}]
+		}]
 	}],
 	"thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/JRA_Baji_Kouen.jpg/300px-JRA_Baji_Kouen.jpg",
 	"center": [139.63337, 35.63843],
