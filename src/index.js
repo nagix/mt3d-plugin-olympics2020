@@ -1,6 +1,8 @@
-import {Marker, Panel, Plugin, Popup} from 'mini-tokyo-3d';
+import {Marker, MercatorCoordinate, Panel, Plugin, Popup, ThreeLayer, TextureLoader, MeshPhongMaterial, GLTFLoader} from 'mini-tokyo-3d';
 import SVG from './svg/index';
 import olympics from './olympics.json';
+
+const DATA_URL = 'https://minitokyo3d.com/data';
 
 const styleHTML = `
     .olympics-panel {
@@ -33,6 +35,10 @@ const styleHTML = `
     }
 `;
 
+const modelOrigin = MercatorCoordinate.fromLngLat([139.7670, 35.6814]);
+const mCoord = MercatorCoordinate.fromLngLat([139.7143859, 35.6778094]);
+const modelScale = modelOrigin.meterInMercatorCoordinateUnits();
+
 function addColor(url, color) {
     const encodedColor = color.replace('#', '%23');
     return url.replace('%3e', ` fill=\'${encodedColor}\' stroke=\'${encodedColor}\'%3e`);
@@ -49,6 +55,51 @@ style.innerHTML = [
     ].join('\n'))
 ].join('\n');
 document.head.appendChild(style);
+
+class OlympicsLayer extends ThreeLayer {
+
+    onAdd(map, gl) {
+        super.onAdd(map, gl);
+
+        const me = this;
+        const loader = new GLTFLoader();
+        const texture = new TextureLoader().load(`${DATA_URL}/NewOlympicStadium2_d.png`);
+        const alphaMap = new TextureLoader().load(`${DATA_URL}/NewOlympicStadium2_a.png`);
+        const normalMap = new TextureLoader().load(`${DATA_URL}/NewOlympicStadium2_n.png`);
+
+        texture.flipY = false;
+        alphaMap.flipY = false;
+        normalMap.flipY = false;
+
+        loader.load(`${DATA_URL}/NewOlympicStadium2.glb`, gltf => {
+            gltf.scene.traverse(child => {
+                if (child.isMesh) {
+                    child.material = new MeshPhongMaterial({
+                        map: texture,
+                        alphaMap,
+                        normalMap,
+                        alphaTest: 0.5,
+                        transparent: true,
+                        side: 2 // THREE.DoubleSide
+                    });
+                }
+            });
+            gltf.scene.position.x = mCoord.x - modelOrigin.x;
+            gltf.scene.position.y = -(mCoord.y - modelOrigin.y);
+            gltf.scene.position.z = 0;
+            gltf.scene.scale.x = modelScale;
+            gltf.scene.scale.y = modelScale;
+            gltf.scene.scale.z = modelScale;
+            gltf.scene.rotation.x = Math.PI / 2;
+            gltf.scene.rotation.y = -1.95;
+            me.scene.add(gltf.scene);
+        });
+
+        me.light.intensity = 1.8;
+        me.ambientLight.intensity = .9;
+    }
+
+}
 
 class OlympicsPanel extends Panel {
 
@@ -117,6 +168,7 @@ class OlympicsPlugin extends Plugin {
             backgroundSize: '34px',
             backgroundImage: `url("${addColor(SVG.torch, 'white')}")`
         };
+        me._layer = new OlympicsLayer(me.id);
         me.markers = [];
         me._clickEventListener = () => {
             me._updatePanel();
@@ -124,6 +176,15 @@ class OlympicsPlugin extends Plugin {
         me._clockModeEventListener = () => {
             me.setVisibility(true);
         };
+    }
+
+    onAdd(mt3d) {
+        mt3d.map.addLayer(this._layer, 'poi');
+        mt3d.map.setLayerZoomRange(this.id, 14, 24);
+    }
+
+    onRemove(mt3d) {
+        mt3d.map.removeLayer(this._layer);
     }
 
     onEnabled() {
@@ -148,6 +209,7 @@ class OlympicsPlugin extends Plugin {
 
         mt3d.off('clockmode', me._clockModeEventListener);
         mt3d.off('click', me._clickEventListener);
+        me.setVisibility(false);
     }
 
     setVisibility(visible) {
@@ -157,6 +219,7 @@ class OlympicsPlugin extends Plugin {
         for (const marker of me.markers) {
             marker.getElement().style.visibility = visible ? 'visible' : 'hidden';
         }
+        me._mt3d.map.setLayoutProperty(me.id, 'visibility', visible ? 'visible' : 'none');
     }
 
     _addMarkers(venues) {
