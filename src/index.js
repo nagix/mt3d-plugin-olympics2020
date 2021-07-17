@@ -3,6 +3,7 @@ import SVG from './svg/index';
 import olympics from './olympics.json';
 
 const DATA_URL = 'https://minitokyo3d.com/data';
+const REFRESH_INTERVAL = 60000;
 
 const styleHTML = `
     .olympics-panel {
@@ -99,6 +100,12 @@ class OlympicsLayer extends ThreeLayer {
         me.ambientLight.intensity = .9;
     }
 
+    setLightColor(color) {
+        const me = this;
+
+        me.light.color = color;
+        me.ambientLight.color = color;
+    }
 }
 
 class OlympicsPanel extends Panel {
@@ -195,6 +202,20 @@ class OlympicsPlugin extends Plugin {
         mt3d.on('clockmode', me._clockModeEventListener);
         me._addMarkers(olympics);
         me.setVisibility(true);
+
+        const repeat = () => {
+            const now = mt3d.clock.getTime();
+
+            if (Math.floor(now / REFRESH_INTERVAL) !== Math.floor(me.lastRefresh / REFRESH_INTERVAL)) {
+                me._layer.setLightColor(mt3d.getLightColor());
+                me.lastRefresh = now;
+            }
+            if (me.enabled) {
+                requestAnimationFrame(repeat);
+            }
+        };
+
+        repeat();
     }
 
     onDisabled() {
