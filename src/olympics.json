@@ -7056,7 +7056,54 @@
 			"zh-Hans": "花样游泳",
 			"zh-Hant": "花樣游泳"
 		},
-		"icon": "artistic-swimming"
+		"icon": "artistic-swimming",
+		"schedule": [{
+			"date": "2021-08-02",
+			"start": "19:30",
+			"end": "21:45",
+			"events": [{
+				"en": "Duet Free Routine Preliminary",
+				"ja": "デュエットフリールーティン予選"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "19:30",
+			"end": "21:30",
+			"events": [{
+				"en": "Duet Technical Routine",
+				"ja": "デュエットテクニカルルーティン"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "19:30",
+			"end": "21:05",
+			"events": [{
+				"en": "Duet Free Routine Final",
+				"ja": "デュエットフリールーティン決勝"
+			}, {
+				"en": "Duet Victory Ceremony",
+				"ja": "デュエット表彰式"
+			}]
+		}, {
+			"date": "2021-08-06",
+			"start": "19:30",
+			"end": "20:35",
+			"events": [{
+				"en": "Team Technical Routine",
+				"ja": "チームテクニカルルーティン"
+			}]
+		}, {
+			"date": "2021-08-07",
+			"start": "19:30",
+			"end": "21:15",
+			"events": [{
+				"en": "Team Free Routine",
+				"ja": "チームフリールーティン"
+			}, {
+				"en": "Team Victory Ceremony",
+				"ja": "チーム表彰式"
+			}]
+		}]
 	}, {
 		"name": {
 			"en": "Diving",
@@ -7065,7 +7112,160 @@
 			"zh-Hans": "跳水",
 			"zh-Hant": "跳水"
 		},
-		"icon": "diving"
+		"icon": "diving",
+		"schedule": [{
+			"date": "2021-07-25",
+			"start": "15:00",
+			"end": "16:00",
+			"events": [{
+				"en": "Women's Synchronised 3m Springboard Final",
+				"ja": "女子シンクロナイズドダイビング3m飛板飛込決勝"
+			}, {
+				"en": "Women's Synchronised 3m Springboard Victory Ceremony",
+				"ja": "女子シンクロナイズドダイビング3m飛板飛込表彰式"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "15:00",
+			"end": "16:00",
+			"events": [{
+				"en": "Men's Synchronised 10m Platform Final",
+				"ja": "男子シンクロナイズドダイビング10m高飛込決勝"
+			}, {
+				"en": "Men's Synchronised 10m Platform Victory Ceremony",
+				"ja": "男子シンクロナイズドダイビング10m高飛込表彰式"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "15:00",
+			"end": "16:00",
+			"events": [{
+				"en": "Women's Synchronised 10m Platform Final",
+				"ja": "女子シンクロナイズドダイビング10m高飛込決勝"
+			}, {
+				"en": "Women's Synchronised 10m Platform Victory Ceremony",
+				"ja": "女子シンクロナイズドダイビング10m高飛込表彰式"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "15:00",
+			"end": "16:00",
+			"events": [{
+				"en": "Men's Synchronised 3m Springboard Final",
+				"ja": "男子シンクロナイズドダイビング3m飛板飛込決勝"
+			}, {
+				"en": "Men's Synchronised 3m Springboard Victory Ceremony",
+				"ja": "男子シンクロナイズドダイビング3m飛板飛込表彰式"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "15:00",
+			"end": "17:30",
+			"events": [{
+				"en": "Women's 3m Springboard Preliminary",
+				"ja": "女子3m飛板飛込予選"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "15:00",
+			"end": "16:25",
+			"events": [{
+				"en": "Women's 3m Springboard Semifinal",
+				"ja": "女子3m飛板飛込準決勝"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "15:00",
+			"end": "16:25",
+			"events": [{
+				"en": "Women's 3m Springboard Final",
+				"ja": "女子3m飛板飛込決勝"
+			}, {
+				"en": "Women's 3m Springboard Victory Ceremony",
+				"ja": "女子3m飛板飛込表彰式"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "15:00",
+			"end": "17:30",
+			"events": [{
+				"en": "Men's 3m Springboard Preliminary",
+				"ja": "男子3m飛板飛込予選"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "10:00",
+			"end": "11:30",
+			"events": [{
+				"en": "Men's 3m Springboard Semifinal",
+				"ja": "男子3m飛板飛込準決勝"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "15:00",
+			"end": "16:30",
+			"events": [{
+				"en": "Men's 3m Springboard Final",
+				"ja": "男子3m飛板飛込決勝"
+			}, {
+				"en": "Men's 3m Springboard Victory Ceremony",
+				"ja": "男子3m飛板飛込表彰式"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "15:00",
+			"end": "17:30",
+			"events": [{
+				"en": "Women's 10m Platform Preliminary",
+				"ja": "女子10m高飛込予選"
+			}]
+		}, {
+			"date": "2021-08-05",
+			"start": "10:00",
+			"end": "11:25",
+			"events": [{
+				"en": "Women's 10m Platform Semifinal",
+				"ja": "女子10m高飛込準決勝"
+			}]
+		}, {
+			"date": "2021-08-05",
+			"start": "15:00",
+			"end": "16:25",
+			"events": [{
+				"en": "Women's 10m Platform Final",
+				"ja": "女子10m高飛込決勝"
+			}, {
+				"en": "Women's 10m Platform Victory Ceremony",
+				"ja": "女子10m高飛込表彰式"
+			}]
+		}, {
+			"date": "2021-08-06",
+			"start": "15:00",
+			"end": "17:30",
+			"events": [{
+				"en": "Men's 10m Platform Preliminary",
+				"ja": "男子10m高飛込予選"
+			}]
+		}, {
+			"date": "2021-08-07",
+			"start": "10:00",
+			"end": "11:40",
+			"events": [{
+				"en": "Men's 10m Platform Semifinal",
+				"ja": "男子10m高飛込準決勝"
+			}]
+		}, {
+			"date": "2021-08-07",
+			"start": "15:00",
+			"end": "16:25",
+			"events": [{
+				"en": "Men's 10m Platform Final",
+				"ja": "男子10m高飛込決勝"
+			}, {
+				"en": "Men's 10m Platform Victory Ceremony",
+				"ja": "男子10m高飛込表彰式"
+			}]
+		}]
 	}, {
 		"name": {
 			"en": "Swimming",
@@ -7074,7 +7274,458 @@
 			"zh-Hans": "游泳",
 			"zh-Hant": "游泳"
 		},
-		"icon": "swimming"
+		"icon": "swimming",
+		"schedule": [{
+			"date": "2021-07-24",
+			"start": "19:00",
+			"end": "21:30",
+			"events": [{
+				"en": "Men's 400m Individual Medley - Heats",
+				"ja": "男子400m個人メドレー予選"
+			}, {
+				"en": "Women's 100m Butterfly - Heats",
+				"ja": "女子100mバタフライ予選"
+			}, {
+				"en": "Men's 400m Freestyle - Heats",
+				"ja": "男子400m自由形予選"
+			}, {
+				"en": "Women's 400m Individual Medley - Heats",
+				"ja": "女子400m個人メドレー予選"
+			}, {
+				"en": "Men's 100m Breaststroke - Heats",
+				"ja": "男子100m平泳ぎ予選"
+			}, {
+				"en": "Women's 4 x 100m Freestyle Relay - Heats",
+				"ja": "女子4×100mフリーリレー予選"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "10:30",
+			"end": "12:20",
+			"events": [{
+				"en": "Men's 400m Individual Medley Final",
+				"ja": "男子400m個人メドレー決勝"
+			}, {
+				"en": "Women's 100m Butterfly Semifinals",
+				"ja": "女子100mバタフライ準決勝"
+			}, {
+				"en": "Men's 400m Freestyle Final",
+				"ja": "男子400m自由形決勝"
+			}, {
+				"en": "Men's 400m Individual Medley Victory Ceremony",
+				"ja": "男子400m個人メドレー表彰式"
+			}, {
+				"en": "Women's 400m Individual Medley Final",
+				"ja": "女子400m個人メドレー決勝"
+			}, {
+				"en": "Men's 400m Freestyle Victory Ceremony",
+				"ja": "男子400m自由形表彰式"
+			}, {
+				"en": "Men's 100m Breaststroke Semifinals",
+				"ja": "男子100m平泳ぎ準決勝"
+			}, {
+				"en": "Women's 4 x 100m Freestyle Relay Final",
+				"ja": "女子4×100mフリーリレー決勝"
+			}, {
+				"en": "Women's 400m Individual Medley Victory Ceremony",
+				"ja": "女子400m個人メドレー表彰式"
+			}, {
+				"en": "Women's 4 x 100m Freestyle Relay Victory Ceremony",
+				"ja": "女子4×100mフリーリレー表彰式"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "19:00",
+			"end": "21:30",
+			"events": [{
+				"en": "Women's 100m Backstroke - Heats",
+				"ja": "女子100m背泳ぎ予選"
+			}, {
+				"en": "Men's 200m Freestyle - Heats",
+				"ja": "男子200m自由形予選"
+			}, {
+				"en": "Women's 100m Breaststroke - Heats",
+				"ja": "女子100m平泳ぎ予選"
+			}, {
+				"en": "Men's 100m Backstroke - Heats",
+				"ja": "男子100m背泳ぎ予選"
+			}, {
+				"en": "Women's 400m Freestyle - Heats",
+				"ja": "女子400m自由形予選"
+			}, {
+				"en": "Men's 4 x 100m Freestyle Relay - Heats",
+				"ja": "男子4×100mフリーリレー予選"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "10:30",
+			"end": "12:40",
+			"events": [{
+				"en": "Women's 100m Butterfly Final",
+				"ja": "女子100mバタフライ決勝"
+			}, {
+				"en": "Men's 200m Freestyle Semifinals",
+				"ja": "男子200m自由形準決勝"
+			}, {
+				"en": "Women's 100m Breaststroke Semifinals",
+				"ja": "女子100m平泳ぎ準決勝"
+			}, {
+				"en": "Women's 100m Butterfly Victory Ceremony",
+				"ja": "女子100mバタフライ表彰式"
+			}, {
+				"en": "Men's 100m Breaststroke Final",
+				"ja": "男子100m平泳ぎ決勝"
+			}, {
+				"en": "Women's 400m Freestyle Final",
+				"ja": "女子400m自由形決勝"
+			}, {
+				"en": "Men's 100m Backstroke Semifinals",
+				"ja": "男子100m背泳ぎ準決勝"
+			}, {
+				"en": "Men's 100m Breaststroke Victory Ceremony",
+				"ja": "男子100m平泳ぎ表彰式"
+			}, {
+				"en": "Women's 100m Backstroke Semifinals",
+				"ja": "女子100m背泳ぎ準決勝"
+			}, {
+				"en": "Men's 4 x 100m Freestyle Relay Final",
+				"ja": "男子4×100mフリーリレー決勝"
+			}, {
+				"en": "Women's 400m Freestyle Victory Ceremony",
+				"ja": "女子400m自由形表彰式"
+			}, {
+				"en": "Men's 4 x 100m Freestyle Relay Victory Ceremony",
+				"ja": "男子4×100mフリーリレー表彰式"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "19:00",
+			"end": "21:30",
+			"events": [{
+				"en": "Women's 200m Freestyle - Heats",
+				"ja": "女子200m自由形予選"
+			}, {
+				"en": "Men's 200m Butterfly - Heats",
+				"ja": "男子200mバタフライ予選"
+			}, {
+				"en": "Women's 200m Individual Medley - Heats",
+				"ja": "女子200m個人メドレー予選"
+			}, {
+				"en": "Women's 1500m Freestyle - Heats",
+				"ja": "女子1500m自由形予選"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "10:30",
+			"end": "12:25",
+			"events": [{
+				"en": "Women's 200m Freestyle Semifinals",
+				"ja": "女子200m自由形準決勝"
+			}, {
+				"en": "Men's 200m Freestyle Final",
+				"ja": "男子200m自由形決勝"
+			}, {
+				"en": "Women's 100m Backstroke Final",
+				"ja": "女子100m背泳ぎ決勝"
+			}, {
+				"en": "Men's 100m Backstroke Final",
+				"ja": "男子100m背泳ぎ決勝"
+			}, {
+				"en": "Men's 200m Freestyle Victory Ceremony",
+				"ja": "男子200m自由形表彰式"
+			}, {
+				"en": "Women's 100m Breaststroke Final",
+				"ja": "女子100m平泳ぎ決勝"
+			}, {
+				"en": "Women's 100m Backstroke Victory Ceremony",
+				"ja": "女子100m背泳ぎ表彰式"
+			}, {
+				"en": "Men's 200m Butterfly Semifinals",
+				"ja": "男子200mバタフライ準決勝"
+			}, {
+				"en": "Men's 100m Backstroke Victory Ceremony",
+				"ja": "男子100m背泳ぎ表彰式"
+			}, {
+				"en": "Women's 200m Individual Medley Semifinals",
+				"ja": "女子200m個人メドレー準決勝"
+			}, {
+				"en": "Women's 100m Breaststroke Victory Ceremony",
+				"ja": "女子100m平泳ぎ表彰式"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "19:00",
+			"end": "21:30",
+			"events": [{
+				"en": "Men's 100m Freestyle - Heats",
+				"ja": "男子100m自由形予選"
+			}, {
+				"en": "Women's 200m Butterfly - Heats",
+				"ja": "女子200mバタフライ予選"
+			}, {
+				"en": "Men's 200m Breaststroke - Heats",
+				"ja": "男子200m平泳ぎ予選"
+			}, {
+				"en": "Men's 4 x 200m Freestyle Relay - Heats",
+				"ja": "男子4×200mフリーリレー予選"
+			}, {
+				"en": "Men's 800m Freestyle - Heats",
+				"ja": "男子800m自由形予選"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "10:30",
+			"end": "13:05",
+			"events": [{
+				"en": "Men's 100m Freestyle Semifinals",
+				"ja": "男子100m自由形準決勝"
+			}, {
+				"en": "Women's 200m Freestyle Final",
+				"ja": "女子200m自由形決勝"
+			}, {
+				"en": "Men's 200m Butterfly Final",
+				"ja": "男子200mバタフライ決勝"
+			}, {
+				"en": "Women's 200m Butterfly Semifinals",
+				"ja": "女子200mバタフライ準決勝"
+			}, {
+				"en": "Women's 200m Freestyle Victory Ceremony",
+				"ja": "女子200m自由形表彰式"
+			}, {
+				"en": "Men's 200m Breaststroke Semifinals",
+				"ja": "男子200m平泳ぎ準決勝"
+			}, {
+				"en": "Men's 200m Butterfly Victory Ceremony",
+				"ja": "男子200mバタフライ表彰式"
+			}, {
+				"en": "Women's 200m Individual Medley Final",
+				"ja": "女子200m個人メドレー決勝"
+			}, {
+				"en": "Women's 1500m Freestyle Final",
+				"ja": "女子1500m自由形決勝"
+			}, {
+				"en": "Women's 200m Individual Medley Victory Ceremony",
+				"ja": "女子200m個人メドレー表彰式"
+			}, {
+				"en": "Men's 4 x 200m Freestyle Relay Final",
+				"ja": "男子4×200mフリーリレー決勝"
+			}, {
+				"en": "Women's 1500m Freestyle Victory Ceremony",
+				"ja": "女子1500m自由形表彰式"
+			}, {
+				"en": "Men's 4 x 200m Freestyle Victory Ceremony",
+				"ja": "男子4×200mフリーリレー表彰式"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "19:00",
+			"end": "21:30",
+			"events": [{
+				"en": "Women's 100m Freestyle - Heats",
+				"ja": "女子100m自由形予選"
+			}, {
+				"en": "Men's 200m Backstroke - Heats",
+				"ja": "男子200m背泳ぎ予選"
+			}, {
+				"en": "Women's 200m Breaststroke - Heats",
+				"ja": "女子200m平泳ぎ予選"
+			}, {
+				"en": "Men's 200m Individual Medley - Heats",
+				"ja": "男子200m個人メドレー予選"
+			}, {
+				"en": "Women's 4 x 200m Freestyle Relay - Heats",
+				"ja": "女子4×200mフリーリレー予選"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "10:30",
+			"end": "13:10",
+			"events": [{
+				"en": "Men's 800m Freestyle Final",
+				"ja": "男子800m自由形決勝"
+			}, {
+				"en": "Men's 200m Breaststroke Final",
+				"ja": "男子200m平泳ぎ決勝"
+			}, {
+				"en": "Women's 100m Freestyle Semifinals",
+				"ja": "女子100m自由形準決勝"
+			}, {
+				"en": "Men's 200m Backstroke Semifinals",
+				"ja": "男子200m背泳ぎ準決勝"
+			}, {
+				"en": "Men's 800m Freestyle Victory Ceremony",
+				"ja": "男子800m自由形表彰式"
+			}, {
+				"en": "Women's 200m Butterfly Final",
+				"ja": "女子200mバタフライ決勝"
+			}, {
+				"en": "Men's 100m Freestyle Final",
+				"ja": "男子100m自由形決勝"
+			}, {
+				"en": "Men's 200m Breaststroke Victory Ceremony",
+				"ja": "男子200m平泳ぎ表彰式"
+			}, {
+				"en": "Women's 200m Breaststroke Semifinals",
+				"ja": "女子200m平泳ぎ準決勝"
+			}, {
+				"en": "Men's 200m Individual Medley Semifinals",
+				"ja": "男子200m個人メドレー準決勝"
+			}, {
+				"en": "Women's 200m Butterfly Victory Ceremony",
+				"ja": "女子200mバタフライ表彰式"
+			}, {
+				"en": "Women's 4 x 200m Freestyle Relay Final",
+				"ja": "女子4×200mフリーリレー決勝"
+			}, {
+				"en": "Men's 100m Freestyle Victory Ceremony",
+				"ja": "男子100m自由形表彰式"
+			}, {
+				"en": "Women's 4 x 200m Freestyle Relay Victory Ceremony",
+				"ja": "女子4×200mフリーリレー表彰式"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "19:00",
+			"end": "21:30",
+			"events": [{
+				"en": "Women's 800m Freestyle - Heats",
+				"ja": "女子800m自由形予選"
+			}, {
+				"en": "Men's 100m Butterfly - Heats",
+				"ja": "男子100mバタフライ予選"
+			}, {
+				"en": "Women's 200m Backstroke - Heats",
+				"ja": "女子200m背泳ぎ予選"
+			}, {
+				"en": "Mixed 4 x 100m Medley Relay - Heats",
+				"ja": "混合4×100mメドレーリレー予選"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "10:30",
+			"end": "12:10",
+			"events": [{
+				"en": "Men's 100m Butterfly Semifinals",
+				"ja": "男子100mバタフライ準決勝"
+			}, {
+				"en": "Women's 200m Breaststroke Final",
+				"ja": "女子200m平泳ぎ決勝"
+			}, {
+				"en": "Men's 200m Backstroke Final",
+				"ja": "男子200m背泳ぎ決勝"
+			}, {
+				"en": "Women's 100m Freestyle Final",
+				"ja": "女子100m自由形決勝"
+			}, {
+				"en": "Women's 200m Breaststroke Victory Ceremony",
+				"ja": "女子200m平泳ぎ表彰式"
+			}, {
+				"en": "Men's 200m Individual Medley Final",
+				"ja": "男子200m個人メドレー決勝"
+			}, {
+				"en": "Men's 200m Backstroke Victory Ceremony",
+				"ja": "男子200m背泳ぎ表彰式"
+			}, {
+				"en": "Women's 200m Backstroke Semifinals",
+				"ja": "女子200m背泳ぎ準決勝"
+			}, {
+				"en": "Women's 100m Freestyle Victory Ceremony",
+				"ja": "女子100m自由形表彰式"
+			}, {
+				"en": "Men's 200m Individual Medley Victory Ceremony",
+				"ja": "男子200m個人メドレー表彰式"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "19:00",
+			"end": "21:30",
+			"events": [{
+				"en": "Men's 50m Freestyle - Heats",
+				"ja": "男子50m自由形予選"
+			}, {
+				"en": "Women's 50m Freestyle - Heats",
+				"ja": "女子50m自由形予選"
+			}, {
+				"en": "Men's 1500m Freestyle - Heats",
+				"ja": "男子1500m自由形予選"
+			}, {
+				"en": "Women's 4 x 100m Medley Relay - Heats",
+				"ja": "女子4×100mメドレーリレー予選"
+			}, {
+				"en": "Men's 4 x 100m Medley Relay - Heats",
+				"ja": "男子4×100mメドレーリレー予選"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "10:30",
+			"end": "12:20",
+			"events": [{
+				"en": "Men's 100m Butterfly Final",
+				"ja": "男子100mバタフライ決勝"
+			}, {
+				"en": "Women's 200m Backstroke Final",
+				"ja": "女子200m背泳ぎ決勝"
+			}, {
+				"en": "Women's 800m Freestyle Final",
+				"ja": "女子800m自由形決勝"
+			}, {
+				"en": "Men's 100m Butterfly Victory Ceremony",
+				"ja": "男子100mバタフライ表彰式"
+			}, {
+				"en": "Men's 50m Freestyle Semifinals",
+				"ja": "男子50m自由形準決勝"
+			}, {
+				"en": "Women's 200m Backstroke Victory Ceremony",
+				"ja": "女子200m背泳ぎ表彰式"
+			}, {
+				"en": "Women's 50m Freestyle Semifinals",
+				"ja": "女子50m自由形準決勝"
+			}, {
+				"en": "Mixed 4 x 100m Medley Relay Final",
+				"ja": "混合4×100mメドレーリレー決勝"
+			}, {
+				"en": "Women's 800m Freestyle Victory Ceremony",
+				"ja": "女子800m自由形表彰式"
+			}, {
+				"en": "Mixed 4 x 100m Medley Relay Victory Ceremony",
+				"ja": "混合4×100mメドレーリレー表彰式"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "10:30",
+			"end": "12:25",
+			"events": [{
+				"en": "Men's 50m Freestyle Final",
+				"ja": "男子50m自由形決勝"
+			}, {
+				"en": "Women's 50m Freestyle Final",
+				"ja": "女子50m自由形決勝"
+			}, {
+				"en": "Men's 1500m Freestyle Final",
+				"ja": "男子1500m自由形決勝"
+			}, {
+				"en": "Men's 50m Freestyle Victory Ceremony",
+				"ja": "男子50m自由形表彰式"
+			}, {
+				"en": "Women's 4 x 100m Medley Relay Final",
+				"ja": "女子4×100mメドレーリレー決勝"
+			}, {
+				"en": "Women's 50m Freestyle Victory Ceremony",
+				"ja": "女子50m自由形表彰式"
+			}, {
+				"en": "Men's 4 x 100m Medley Relay Final",
+				"ja": "男子4×100mメドレーリレー決勝"
+			}, {
+				"en": "Men's 1500m Freestyle Victory Ceremony",
+				"ja": "男子1500m自由形表彰式"
+			}, {
+				"en": "Women's 4 x 100m Medley Relay Victory Ceremony",
+				"ja": "女子4×100mメドレーリレー表彰式"
+			}, {
+				"en": "Men's 4 x 100m Medley Relay Victory Ceremony",
+				"ja": "男子4×100mメドレーリレー表彰式"
+			}]
+		}]
 	}],
 	"thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tokyo_Aquatics_Centre.jpg/300px-Tokyo_Aquatics_Centre.jpg",
 	"center": [139.81504, 35.65114],
@@ -7100,7 +7751,419 @@
 			"zh-Hans": "水球",
 			"zh-Hant": "水球"
 		},
-		"icon": "water-polo"
+		"icon": "water-polo",
+		"schedule": [{
+			"date": "2021-07-24",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Women's Preliminary Round - Group B, Japan vs United States",
+				"ja": "女子予選ラウンド - グループB 日本 vs アメリカ合衆国"
+			}, {
+				"en": "Women's Preliminary Round - Group A, Canada vs Australia",
+				"ja": "女子予選ラウンド - グループA カナダ vs オーストラリア"
+			}]
+		}, {
+			"date": "2021-07-24",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Women's Preliminary Round - Group A, South Africa vs Spain",
+				"ja": "女子予選ラウンド - グループA 南アフリカ vs スペイン"
+			}, {
+				"en": "Women's Preliminary Round - Group B, China vs ROC",
+				"ja": "女子予選ラウンド - グループB 中国 vs ROC"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "10:00",
+			"end": "12:50",
+			"events": [{
+				"en": "Men's Preliminary Round - Group A, South Africa vs Italy",
+				"ja": "男子予選ラウンド - グループA 南アフリカ vs イタリア"
+			}, {
+				"en": "Men's Preliminary Round - Group A, Hungary vs Greece",
+				"ja": "男子予選ラウンド - グループA ハンガリー vs ギリシャ"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Men's Preliminary Round - Group A, United States vs Japan",
+				"ja": "男子予選ラウンド - グループA アメリカ合衆国 vs 日本"
+			}, {
+				"en": "Men's Preliminary Round - Group B, Australia vs Montenegro",
+				"ja": "男子予選ラウンド - グループB オーストラリア vs モンテネグロ"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Men's Preliminary Round - Group B, Serbia vs Spain",
+				"ja": "男子予選ラウンド - グループB セルビア vs スペイン"
+			}, {
+				"en": "Men's Preliminary Round - Group B, Croatia vs Kazakhstan",
+				"ja": "男子予選ラウンド - グループB クロアチア vs カザフスタン"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Women's Preliminary Round - Group B, United States vs China",
+				"ja": "女子予選ラウンド - グループB アメリカ合衆国 vs 中国"
+			}, {
+				"en": "Women's Preliminary Round - Group B, ROC vs Hungary",
+				"ja": "女子予選ラウンド - グループB ROC vs ハンガリー"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Women's Preliminary Round - Group A, Australia vs Netherlands",
+				"ja": "女子予選ラウンド - グループA オーストラリア vs オランダ"
+			}, {
+				"en": "Women's Preliminary Round - Group A, Spain vs Canada",
+				"ja": "女子予選ラウンド - グループA スペイン vs カナダ"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "10:00",
+			"end": "12:50",
+			"events": [{
+				"en": "Men's Preliminary Round - Group A, South Africa vs United States",
+				"ja": "男子予選ラウンド - グループA 南アフリカ vs アメリカ合衆国"
+			}, {
+				"en": "Men's Preliminary Round - Group B, Montenegro vs Spain",
+				"ja": "男子予選ラウンド - グループB モンテネグロ vs スペイン"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Men's Preliminary Round - Group B, Kazakhstan vs Serbia",
+				"ja": "男子予選ラウンド - グループB カザフスタン vs セルビア"
+			}, {
+				"en": "Men's Preliminary Round - Group A, Italy vs Greece",
+				"ja": "男子予選ラウンド - グループA イタリア vs ギリシャ"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Men's Preliminary Round - Group A, Japan vs Hungary",
+				"ja": "男子予選ラウンド - グループA 日本 vs ハンガリー"
+			}, {
+				"en": "Men's Preliminary Round - Group B, Australia vs Croatia",
+				"ja": "男子予選ラウンド - グループB オーストラリア vs クロアチア"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Women's Preliminary Round - Group B, Hungary vs United States",
+				"ja": "女子予選ラウンド - グループB ハンガリー vs アメリカ合衆国"
+			}, {
+				"en": "Women's Preliminary Round - Group A, Canada vs South Africa",
+				"ja": "女子予選ラウンド - グループA カナダ vs 南アフリカ"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Women's Preliminary Round - Group B, China vs Japan",
+				"ja": "女子予選ラウンド - グループB 中国 vs 日本"
+			}, {
+				"en": "Women's Preliminary Round - Group A, Netherlands vs Spain",
+				"ja": "女子予選ラウンド - グループA オランダ vs スペイン"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "10:00",
+			"end": "12:50",
+			"events": [{
+				"en": "Men's Preliminary Round - Group A, Hungary vs South Africa",
+				"ja": "男子予選ラウンド - グループA ハンガリー vs 南アフリカ"
+			}, {
+				"en": "Men's Preliminary Round - Group B, Spain vs Kazakhstan",
+				"ja": "男子予選ラウンド - グループB スペイン vs カザフスタン"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Men's Preliminary Round - Group A, United States vs Italy",
+				"ja": "男子予選ラウンド - グループA アメリカ合衆国 vs イタリア"
+			}, {
+				"en": "Men's Preliminary Round - Group B, Croatia vs Montenegro",
+				"ja": "男子予選ラウンド - グループB クロアチア vs モンテネグロ"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Men's Preliminary Round - Group A, Greece vs Japan",
+				"ja": "男子予選ラウンド - グループA ギリシャ vs 日本"
+			}, {
+				"en": "Men's Preliminary Round - Group B, Serbia vs Australia",
+				"ja": "男子予選ラウンド - グループB セルビア vs オーストラリア"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Women's Preliminary Round - Group A, South Africa vs Netherlands",
+				"ja": "女子予選ラウンド - グループA 南アフリカ vs オランダ"
+			}, {
+				"en": "Women's Preliminary Round - Group B, United States vs ROC",
+				"ja": "女子予選ラウンド - グループB アメリカ合衆国 vs ROC"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Women's Preliminary Round - Group B, Japan vs Hungary",
+				"ja": "女子予選ラウンド - グループB 日本 vs ハンガリー"
+			}, {
+				"en": "Women's Preliminary Round - Group A, Spain vs Australia",
+				"ja": "女子予選ラウンド - グループA スペイン vs オーストラリア"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "10:00",
+			"end": "12:50",
+			"events": [{
+				"en": "Men's Preliminary Round - Group B, Montenegro vs Kazakhstan",
+				"ja": "男子予選ラウンド - グループB モンテネグロ vs カザフスタン"
+			}, {
+				"en": "Men's Preliminary Round - Group B, Australia vs Spain",
+				"ja": "男子予選ラウンド - グループB オーストラリア vs スペイン"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Men's Preliminary Round - Group A, United States vs Hungary",
+				"ja": "男子予選ラウンド - グループA アメリカ合衆国 vs ハンガリー"
+			}, {
+				"en": "Men's Preliminary Round - Group B, Croatia vs Serbia",
+				"ja": "男子予選ラウンド - グループB クロアチア vs セルビア"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Men's Preliminary Round - Group A, Italy vs Japan",
+				"ja": "男子予選ラウンド - グループA イタリア vs 日本"
+			}, {
+				"en": "Men's Preliminary Round - Group A, South Africa vs Greece",
+				"ja": "男子予選ラウンド - グループA 南アフリカ vs ギリシャ"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Women's Preliminary Round - Group B, Hungary vs China",
+				"ja": "女子予選ラウンド - グループB ハンガリー vs 中国"
+			}, {
+				"en": "Women's Preliminary Round - Group A, Netherlands vs Canada",
+				"ja": "女子予選ラウンド - グループA オランダ vs カナダ"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Women's Preliminary Round - Group B, ROC vs Japan",
+				"ja": "女子予選ラウンド - グループB ROC vs 日本"
+			}, {
+				"en": "Women's Preliminary Round - Group A, Australia vs South Africa",
+				"ja": "女子予選ラウンド - グループA オーストラリア vs 南アフリカ"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "10:00",
+			"end": "12:50",
+			"events": [{
+				"en": "Men's Preliminary Round - Group A, Hungary vs Italy",
+				"ja": "男子予選ラウンド - グループA ハンガリー vs イタリア"
+			}, {
+				"en": "Men's Preliminary Round - Group A, Greece vs United States",
+				"ja": "男子予選ラウンド - グループA ギリシャ vs アメリカ合衆国"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Men's Preliminary Round - Group B, Serbia vs Montenegro",
+				"ja": "男子予選ラウンド - グループB セルビア vs モンテネグロ"
+			}, {
+				"en": "Men's Preliminary Round - Group B, Spain vs Croatia",
+				"ja": "男子予選ラウンド - グループB スペイン vs クロアチア"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Men's Preliminary Round - Group A, Japan vs South Africa",
+				"ja": "男子予選ラウンド - グループA 日本 vs 南アフリカ"
+			}, {
+				"en": "Men's Preliminary Round - Group B, Australia vs Kazakhstan",
+				"ja": "男子予選ラウンド - グループB オーストラリア vs カザフスタン"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Women's Quarterfinals (2 matches)",
+				"ja": "女子準々決勝（2試合）"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Women's Quarterfinals (2 matches)",
+				"ja": "女子準々決勝（2試合）"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Men's Quarterfinals (2 matches)",
+				"ja": "男子準々決勝（2試合）"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Men's Quarterfinals (2 matches)",
+				"ja": "男子準々決勝（2試合）"
+			}]
+		}, {
+			"date": "2021-08-05",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Women's Classification match (5th-8th places)",
+				"ja": "女子5-8位決定戦"
+			}, {
+				"en": "Women's Semifinal",
+				"ja": "女子準決勝"
+			}]
+		}, {
+			"date": "2021-08-05",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Women's Classification match (5th-8th places)",
+				"ja": "女子5-8位決定戦"
+			}, {
+				"en": "Women's Semifinal",
+				"ja": "女子準決勝"
+			}]
+		}, {
+			"date": "2021-08-06",
+			"start": "14:00",
+			"end": "16:50",
+			"events": [{
+				"en": "Men's Classification match (5th-8th places)",
+				"ja": "男子5-8位決定戦"
+			}, {
+				"en": "Men's Semifinal",
+				"ja": "男子準決勝"
+			}]
+		}, {
+			"date": "2021-08-06",
+			"start": "18:20",
+			"end": "21:10",
+			"events": [{
+				"en": "Men's Classification match (5th-8th places)",
+				"ja": "男子5-8位決定戦"
+			}, {
+				"en": "Men's Semifinal",
+				"ja": "男子準決勝"
+			}]
+		}, {
+			"date": "2021-08-07",
+			"start": "9:30",
+			"end": "12:20",
+			"events": [{
+				"en": "Women's classification match (7th-8th places)",
+				"ja": "女子7-8位決定戦"
+			}, {
+				"en": "Women's classification match (5th-6th places)",
+				"ja": "女子5-6位決定戦"
+			}]
+		}, {
+			"date": "2021-08-07",
+			"start": "13:40",
+			"end": "15:00",
+			"events": [{
+				"en": "Women's Bronze Medal Match",
+				"ja": "女子3位決定戦"
+			}]
+		}, {
+			"date": "2021-08-07",
+			"start": "16:30",
+			"end": "18:20",
+			"events": [{
+				"en": "Women's Gold Medal Match",
+				"ja": "女子決勝戦"
+			}, {
+				"en": "Women's Victory Ceremony",
+				"ja": "女子表彰式"
+			}]
+		}, {
+			"date": "2021-08-08",
+			"start": "9:30",
+			"end": "12:20",
+			"events": [{
+				"en": "Men's classification match (7th-8th places)",
+				"ja": "男子7-8位決定戦"
+			}, {
+				"en": "Men's classification match (5th-6th places)",
+				"ja": "男子5-6位決定戦"
+			}]
+		}, {
+			"date": "2021-08-08",
+			"start": "13:40",
+			"end": "15:00",
+			"events": [{
+				"en": "Men's Bronze Medal Match",
+				"ja": "男子3位決定戦"
+			}]
+		}, {
+			"date": "2021-08-08",
+			"start": "16:30",
+			"end": "18:20",
+			"events": [{
+				"en": "Men's Gold Medal Match",
+				"ja": "男子決勝戦"
+			}, {
+				"en": "Men's Victory Ceremony",
+				"ja": "男子表彰式"
+			}]
+		}]
 	}],
 	"thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Tatsumi_Water_Polo_Centre.jpg/300px-Tatsumi_Water_Polo_Centre.jpg",
 	"center": [139.81894, 35.64766],
@@ -7126,7 +8189,398 @@
 			"zh-Hans": "击剑",
 			"zh-Hant": "擊劍"
 		},
-		"icon": "fencing"
+		"icon": "fencing",
+		"schedule": [{
+			"date": "2021-07-24",
+			"start": "9:00",
+			"end": "16:20",
+			"events": [{
+				"en": "Women's Epée Individual Table of 64",
+				"ja": "女子エペ個人T64"
+			}, {
+				"en": "Men's Sabre Individual Table of 64",
+				"ja": "男子サーブル個人T64"
+			}, {
+				"en": "Women's Epée Individual Table of 32",
+				"ja": "女子エペ個人T32"
+			}, {
+				"en": "Men's Sabre Individual Table of 32",
+				"ja": "男子サーブル個人T32"
+			}, {
+				"en": "Women's Epée Individual Table of 16",
+				"ja": "女子エペ個人T16"
+			}, {
+				"en": "Men's Sabre Individual Table of 16",
+				"ja": "男子サーブル個人T16"
+			}, {
+				"en": "Women's Epée Individual Quarterfinals",
+				"ja": "女子エペ個人準々決勝"
+			}, {
+				"en": "Men's Sabre Individual Quarterfinals",
+				"ja": "男子サーブル個人準々決勝"
+			}]
+		}, {
+			"date": "2021-07-24",
+			"start": "18:00",
+			"end": "22:10",
+			"events": [{
+				"en": "Women's Epée Individual Semifinals",
+				"ja": "女子エペ個人準決勝"
+			}, {
+				"en": "Men's Sabre Individual Semifinals",
+				"ja": "男子サーブル個人準決勝"
+			}, {
+				"en": "Women's Epée Individual Bronze Medal Bout",
+				"ja": "女子エペ個人3位決定戦"
+			}, {
+				"en": "Men's Sabre Individual Bronze Medal Bout",
+				"ja": "男子サーブル個人3位決定戦"
+			}, {
+				"en": "Women's Epée Individual Gold Medal Bout",
+				"ja": "女子エペ個人決勝"
+			}, {
+				"en": "Men's Sabre Individual Gold Medal Bout",
+				"ja": "男子サーブル個人決勝"
+			}, {
+				"en": "Women's Epée Individual Victory Ceremony",
+				"ja": "女子エペ個人表彰式"
+			}, {
+				"en": "Men's Sabre Individual Victory Ceremony",
+				"ja": "男子サーブル個人表彰式"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "9:00",
+			"end": "16:20",
+			"events": [{
+				"en": "Women's Foil Individual Table of 64",
+				"ja": "女子フルーレ個人T64"
+			}, {
+				"en": "Men's Epée Individual Table of 64",
+				"ja": "男子エペ個人T64"
+			}, {
+				"en": "Women's Foil Individual Table of 32",
+				"ja": "女子フルーレ個人T32"
+			}, {
+				"en": "Men's Epée Individual Table of 32",
+				"ja": "男子エペ個人T32"
+			}, {
+				"en": "Women's Foil Individual Table of 16",
+				"ja": "女子フルーレ個人T16"
+			}, {
+				"en": "Men's Epée Individual Table of 16",
+				"ja": "男子エペ個人T16"
+			}, {
+				"en": "Women's Foil Individual Quarterfinals",
+				"ja": "女子フルーレ個人準々決勝"
+			}, {
+				"en": "Men's Epée Individual Quarterfinals",
+				"ja": "男子エペ個人準々決勝"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "18:00",
+			"end": "22:10",
+			"events": [{
+				"en": "Women's Foil Individual Semifinals",
+				"ja": "女子フルーレ個人準決勝"
+			}, {
+				"en": "Men's Epée Individual Semifinals",
+				"ja": "男子エペ個人準決勝"
+			}, {
+				"en": "Women's Foil Individual Bronze Medal Bout",
+				"ja": "女子フルーレ個人3位決定戦"
+			}, {
+				"en": "Men's Epée Individual Bronze Medal Bout",
+				"ja": "男子エペ個人3位決定戦"
+			}, {
+				"en": "Women's Foil Individual Gold Medal Bout",
+				"ja": "女子フルーレ個人決勝"
+			}, {
+				"en": "Men's Epée Individual Gold Medal Bout",
+				"ja": "男子エペ個人決勝"
+			}, {
+				"en": "Women's Foil Individual Victory Ceremony",
+				"ja": "女子フルーレ個人表彰式"
+			}, {
+				"en": "Men's Epée Individual Victory Ceremony",
+				"ja": "男子エペ個人表彰式"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "9:00",
+			"end": "16:20",
+			"events": [{
+				"en": "Women's Sabre Individual Table of 64",
+				"ja": "女子サーブル個人T64"
+			}, {
+				"en": "Men's Foil Individual Table of 64",
+				"ja": "男子フルーレ個人T64"
+			}, {
+				"en": "Women's Sabre Individual Table of 32",
+				"ja": "女子サーブル個人T32"
+			}, {
+				"en": "Men's Foil Individual Table of 32",
+				"ja": "男子フルーレ個人T32"
+			}, {
+				"en": "Women's Sabre Individual Table of 16",
+				"ja": "女子サーブル個人T16"
+			}, {
+				"en": "Men's Foil Individual Table of 16",
+				"ja": "男子フルーレ個人T16"
+			}, {
+				"en": "Women's Sabre Individual Quarterfinals",
+				"ja": "女子サーブル個人準々決勝"
+			}, {
+				"en": "Men's Foil Individual Quarterfinals",
+				"ja": "男子フルーレ個人準々決勝"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "18:00",
+			"end": "22:10",
+			"events": [{
+				"en": "Women's Sabre Individual Semifinals",
+				"ja": "女子サーブル個人準決勝"
+			}, {
+				"en": "Men's Foil Individual Semifinals",
+				"ja": "男子フルーレ個人準決勝"
+			}, {
+				"en": "Women's Sabre Individual Bronze Medal Bout",
+				"ja": "女子サーブル個人3位決定戦"
+			}, {
+				"en": "Men's Foil Individual Bronze Medal Bout",
+				"ja": "男子フルーレ個人3位決定戦"
+			}, {
+				"en": "Women's Sabre Individual Gold Medal Bout",
+				"ja": "女子サーブル個人決勝"
+			}, {
+				"en": "Men's Foil Individual Gold Medal Bout",
+				"ja": "男子フルーレ個人決勝"
+			}, {
+				"en": "Women's Sabre Individual Victory Ceremony",
+				"ja": "女子サーブル個人表彰式"
+			}, {
+				"en": "Men's Foil Individual Victory Ceremony",
+				"ja": "男子フルーレ個人表彰式"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "11:25",
+			"end": "15:20",
+			"events": [{
+				"en": "Women's Epée Team Quarterfinals",
+				"ja": "女子エペ団体準々決勝"
+			}, {
+				"en": "Women's Epée Team Classification 5-8",
+				"ja": "女子エペ団体5-8位決定戦"
+			}, {
+				"en": "Women's Epée Team Semifinals",
+				"ja": "女子エペ団体準決勝"
+			}, {
+				"en": "Women's Epée Team Placement 5-6",
+				"ja": "女子エペ団体5-6位決定戦"
+			}, {
+				"en": "Women's Epée Team Placement 7-8",
+				"ja": "女子エペ団体7-8位決定戦"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "18:30",
+			"end": "20:40",
+			"events": [{
+				"en": "Women's Epée Team Bronze Medal Match",
+				"ja": "女子エペ団体3位決定戦"
+			}, {
+				"en": "Women's Epée Team Gold Medal Match",
+				"ja": "女子エペ団体決勝"
+			}, {
+				"en": "Women's Epée Team Victory Ceremony",
+				"ja": "女子エペ団体表彰式"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "10:00",
+			"end": "15:20",
+			"events": [{
+				"en": "Men's Sabre Team Table of 16",
+				"ja": "男子サーブル団体T16"
+			}, {
+				"en": "Men's Sabre Team Quarterfinals",
+				"ja": "男子サーブル団体準々決勝"
+			}, {
+				"en": "Men's Sabre Team Classification 5-8",
+				"ja": "男子サーブル団体5-8位決定戦"
+			}, {
+				"en": "Men's Sabre Team Semifinals",
+				"ja": "男子サーブル団体準決勝"
+			}, {
+				"en": "Men's Sabre Team Placement 5-6",
+				"ja": "男子サーブル団体5-6位決定戦"
+			}, {
+				"en": "Men's Sabre Team Placement 7-8",
+				"ja": "男子サーブル団体7-8位決定戦"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "18:30",
+			"end": "20:40",
+			"events": [{
+				"en": "Men's Sabre Team Bronze Medal Match",
+				"ja": "男子サーブル団体3位決定戦"
+			}, {
+				"en": "Men's Sabre Team Gold Medal Match",
+				"ja": "男子サーブル団体決勝"
+			}, {
+				"en": "Men's Sabre Team Victory Ceremony",
+				"ja": "男子サーブル団体表彰式"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "10:50",
+			"end": "16:25",
+			"events": [{
+				"en": "Women's Foil Team Quarterfinals",
+				"ja": "女子フルーレ団体準々決勝"
+			}, {
+				"en": "Women's Foil Team Classification 5-8",
+				"ja": "女子フルーレ団体5-8位決定戦"
+			}, {
+				"en": "Women's Foil Team Semifinals",
+				"ja": "女子フルーレ団体準決勝"
+			}, {
+				"en": "Women's Foil Team Placement 5-6",
+				"ja": "女子フルーレ団体5-6位決定戦"
+			}, {
+				"en": "Women's Foil Team Placement 7-8",
+				"ja": "女子フルーレ団体7-8位決定戦"
+			}]
+		}, {
+			"date": "2021-07-29",
+			"start": "18:30",
+			"end": "21:30",
+			"events": [{
+				"en": "Women's Foil Team Bronze Medal Match",
+				"ja": "女子フルーレ団体3位決定戦"
+			}, {
+				"en": "Women's Foil Team Gold Medal Match",
+				"ja": "女子フルーレ団体決勝"
+			}, {
+				"en": "Women's Foil Team Victory Ceremony",
+				"ja": "女子フルーレ団体表彰式"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "10:00",
+			"end": "15:20",
+			"events": [{
+				"en": "Men's Epée Team Table of 16",
+				"ja": "男子エペ団体T16"
+			}, {
+				"en": "Men's Epée Team Quarterfinals",
+				"ja": "男子エペ団体準々決勝"
+			}, {
+				"en": "Men's Epée Team Classification 5-8",
+				"ja": "男子エペ団体5-8位決定戦"
+			}, {
+				"en": "Men's Epée Team Semifinals",
+				"ja": "男子エペ団体準決勝"
+			}, {
+				"en": "Men's Epée Team Placement 5-6",
+				"ja": "男子エペ団体5-6位決定戦"
+			}, {
+				"en": "Men's Epée Team Placement 7-8",
+				"ja": "男子エペ団体7-8位決定戦"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "18:30",
+			"end": "20:40",
+			"events": [{
+				"en": "Men's Epée Team Bronze Medal Match",
+				"ja": "男子エペ団体3位決定戦"
+			}, {
+				"en": "Men's Epée Team Gold Medal Match",
+				"ja": "男子エペ団体決勝"
+			}, {
+				"en": "Men's Epée Team Victory Ceremony",
+				"ja": "男子エペ団体表彰式"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "10:00",
+			"end": "15:20",
+			"events": [{
+				"en": "Women's Sabre Team Table of 16",
+				"ja": "女子サーブル団体T16"
+			}, {
+				"en": "Women's Sabre Team Quarterfinals",
+				"ja": "女子サーブル団体準々決勝"
+			}, {
+				"en": "Women's Sabre Team Classification 5-8",
+				"ja": "女子サーブル団体5-8位決定戦"
+			}, {
+				"en": "Women's Sabre Team Semifinals",
+				"ja": "女子サーブル団体準決勝"
+			}, {
+				"en": "Women's Sabre Team Placement 5-6",
+				"ja": "女子サーブル団体5-6位決定戦"
+			}, {
+				"en": "Women's Sabre Team Placement 7-8",
+				"ja": "女子サーブル団体7-8位決定戦"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "18:30",
+			"end": "20:40",
+			"events": [{
+				"en": "Women's Sabre Team Bronze Medal Match",
+				"ja": "女子サーブル団体3位決定戦"
+			}, {
+				"en": "Women's Sabre Team Gold Medal Match",
+				"ja": "女子サーブル団体決勝"
+			}, {
+				"en": "Women's Sabre Team Victory Ceremony",
+				"ja": "女子サーブル団体表彰式"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "9:00",
+			"end": "16:00",
+			"events": [{
+				"en": "Men's Foil Team Table of 16",
+				"ja": "男子フルーレ団体T16"
+			}, {
+				"en": "Men's Foil Team Quarterfinals",
+				"ja": "男子フルーレ団体準々決勝"
+			}, {
+				"en": "Men's Foil Team Classification 5-8",
+				"ja": "男子フルーレ団体5-8位決定戦"
+			}, {
+				"en": "Men's Foil Team Semifinals",
+				"ja": "男子フルーレ団体準決勝"
+			}, {
+				"en": "Men's Foil Team Placement 5-6",
+				"ja": "男子フルーレ団体5-6位決定戦"
+			}, {
+				"en": "Men's Foil Team Placement 7-8",
+				"ja": "男子フルーレ団体7-8位決定戦"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "18:30",
+			"end": "21:20",
+			"events": [{
+				"en": "Men's Foil Team Bronze Medal Match",
+				"ja": "男子フルーレ団体3位決定戦"
+			}, {
+				"en": "Men's Foil Team Gold Medal Match",
+				"ja": "男子フルーレ団体決勝"
+			}, {
+				"en": "Men's Foil Team Victory Ceremony",
+				"ja": "男子フルーレ団体表彰式"
+			}]
+		}]
 	}, {
 		"name": {
 			"en": "Taekwondo",
@@ -7135,7 +8589,216 @@
 			"zh-Hans": "跆拳道",
 			"zh-Hant": "跆拳道"
 		},
-		"icon": "taekwondo"
+		"icon": "taekwondo",
+		"schedule": [{
+			"date": "2021-07-24",
+			"start": "10:00",
+			"end": "17:00",
+			"events": [{
+				"en": "Women -49 kg Round of 16 (8 matches)",
+				"ja": "女子49kg級1回戦（8試合）"
+			}, {
+				"en": "Men -58 kg Round of 16 (8 matches)",
+				"ja": "男子58kg級1回戦（8試合）"
+			}, {
+				"en": "Women -49 kg Quarterfinals (4 matches)",
+				"ja": "女子49kg級準々決勝（4試合）"
+			}, {
+				"en": "Men -58 kg Quarterfinals (4 matches)",
+				"ja": "男子58kg級準々決勝（4試合）"
+			}, {
+				"en": "Women -49 kg Semifinals (2 matches)",
+				"ja": "女子49kg級準決勝（2試合）"
+			}, {
+				"en": "Men -58 kg Semifinals (2 matches)",
+				"ja": "男子58kg級準決勝（2試合）"
+			}]
+		}, {
+			"date": "2021-07-24",
+			"start": "19:00",
+			"end": "22:30",
+			"events": [{
+				"en": "Women -49 kg Repechages (2 matches)",
+				"ja": "女子49kg級敗者復活戦（2試合）"
+			}, {
+				"en": "Men -58 kg Repechages (2 matches)",
+				"ja": "男子58kg級敗者復活戦（2試合）"
+			}, {
+				"en": "Women -49 kg Bronze Medal Contests (2 matches)",
+				"ja": "女子49kg級3位決定戦（2試合）"
+			}, {
+				"en": "Men -58 kg Bronze Medal Contests (2 matches)",
+				"ja": "男子58kg級3位決定戦（2試合）"
+			}, {
+				"en": "Women -49 kg Gold Medal Contest",
+				"ja": "女子49kg級決勝"
+			}, {
+				"en": "Men -58 kg Gold Medal Contest",
+				"ja": "男子58kg級決勝"
+			}, {
+				"en": "Women -49 kg Victory Ceremony",
+				"ja": "女子49kg級表彰式"
+			}, {
+				"en": "Men -58 kg Victory Ceremony",
+				"ja": "男子58kg級表彰式"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "10:00",
+			"end": "17:00",
+			"events": [{
+				"en": "Women -57 kg Round of 16 (8 matches)",
+				"ja": "女子57kg級1回戦（8試合）"
+			}, {
+				"en": "Men -68 kg Round of 16 (8 matches)",
+				"ja": "男子68kg級1回戦（8試合）"
+			}, {
+				"en": "Women -57 kg Quarterfinals (4 matches)",
+				"ja": "女子57kg級準々決勝（4試合）"
+			}, {
+				"en": "Men -68 kg Quarterfinals (4 matches)",
+				"ja": "男子68kg級準々決勝（4試合）"
+			}, {
+				"en": "Women -57 kg Semifinals (2 matches)",
+				"ja": "女子57kg級準決勝（2試合）"
+			}, {
+				"en": "Men -68 kg Semifinals (2 matches)",
+				"ja": "男子68kg級準決勝（2試合）"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "19:00",
+			"end": "22:30",
+			"events": [{
+				"en": "Women -57 kg Repechages (2 matches)",
+				"ja": "女子57kg級敗者復活戦（2試合）"
+			}, {
+				"en": "Men -68 kg Repechages (2 matches)",
+				"ja": "男子68kg級敗者復活戦（2試合）"
+			}, {
+				"en": "Women -57 kg Bronze Medal Contests (2 matches)",
+				"ja": "女子57kg級3位決定戦（2試合）"
+			}, {
+				"en": "Men -68 kg Bronze Medal Contests (2 matches)",
+				"ja": "男子68kg級3位決定戦（2試合）"
+			}, {
+				"en": "Women -57 kg Gold Medal Contest",
+				"ja": "女子57kg級決勝"
+			}, {
+				"en": "Men -68 kg Gold Medal Contest",
+				"ja": "男子68kg級決勝"
+			}, {
+				"en": "Women -57 kg Victory Ceremony",
+				"ja": "女子57kg級表彰式"
+			}, {
+				"en": "Men -68 kg Victory Ceremony",
+				"ja": "男子68kg級表彰式"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "10:00",
+			"end": "17:00",
+			"events": [{
+				"en": "Women -67 kg Round of 16 (8 matches)",
+				"ja": "女子67kg級1回戦（8試合）"
+			}, {
+				"en": "Men -80 kg Round of 16 (8 matches)",
+				"ja": "男子80kg級1回戦（8試合）"
+			}, {
+				"en": "Women -67 kg Quarterfinals (4 matches)",
+				"ja": "女子67kg級準々決勝（4試合）"
+			}, {
+				"en": "Men -80 kg Quarterfinals (4 matches)",
+				"ja": "男子80kg級準々決勝（4試合）"
+			}, {
+				"en": "Women -67 kg Semifinals (2 matches)",
+				"ja": "女子67kg級準決勝（2試合）"
+			}, {
+				"en": "Men -80 kg Semifinals (2 matches)",
+				"ja": "男子80kg級準決勝（2試合）"
+			}]
+		}, {
+			"date": "2021-07-26",
+			"start": "19:00",
+			"end": "22:30",
+			"events": [{
+				"en": "Women -67 kg Repechages (2 matches)",
+				"ja": "女子67kg級敗者復活戦（2試合）"
+			}, {
+				"en": "Men -80 kg Repechages (2 matches)",
+				"ja": "男子80kg級敗者復活戦（2試合）"
+			}, {
+				"en": "Women -67 kg Bronze Medal Contests (2 matches)",
+				"ja": "女子67kg級3位決定戦（2試合）"
+			}, {
+				"en": "Men -80 kg Bronze Medal Contests (2 matches)",
+				"ja": "男子80kg級3位決定戦（2試合）"
+			}, {
+				"en": "Women -67 kg Gold Medal Contest",
+				"ja": "女子67kg級決勝"
+			}, {
+				"en": "Men -80 kg Gold Medal Contest",
+				"ja": "男子80kg級決勝"
+			}, {
+				"en": "Women -67 kg Victory Ceremony",
+				"ja": "女子67kg級表彰式"
+			}, {
+				"en": "Men -80 kg Victory Ceremony",
+				"ja": "男子80kg級表彰式"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "10:00",
+			"end": "17:00",
+			"events": [{
+				"en": "Women +67 kg Round of 16 (8 matches)",
+				"ja": "女子67kg超級1回戦（8試合）"
+			}, {
+				"en": "Men +80 kg Round of 16 (8 matches)",
+				"ja": "男子80kg超級1回戦（8試合）"
+			}, {
+				"en": "Women +67 kg Quarterfinals (4 matches)",
+				"ja": "女子67kg超級準々決勝（4試合）"
+			}, {
+				"en": "Men +80 kg Quarterfinals (4 matches)",
+				"ja": "男子80kg超級準々決勝（4試合）"
+			}, {
+				"en": "Women +67 kg Semifinals (2 matches)",
+				"ja": "女子67kg超級準決勝（2試合）"
+			}, {
+				"en": "Men +80 kg Semifinals (2 matches)",
+				"ja": "男子80kg超級準決勝（2試合）"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "19:00",
+			"end": "22:30",
+			"events": [{
+				"en": "Women +67 kg Repechages (2 matches)",
+				"ja": "女子67kg超級敗者復活戦（2試合）"
+			}, {
+				"en": "Men +80 kg Repechages (2 matches)",
+				"ja": "男子80kg超級敗者復活戦（2試合）"
+			}, {
+				"en": "Women +67 kg Bronze Medal Contests (2 matches)",
+				"ja": "女子67kg超級3位決定戦（2試合）"
+			}, {
+				"en": "Men +80 kg Bronze Medal Contests (2 matches)",
+				"ja": "男子80kg超級3位決定戦（2試合）"
+			}, {
+				"en": "Women +67 kg Gold Medal Contest",
+				"ja": "女子67kg超級決勝"
+			}, {
+				"en": "Men +80 kg Gold Medal Contest",
+				"ja": "男子80kg超級決勝"
+			}, {
+				"en": "Women +67 kg Victory Ceremony",
+				"ja": "女子67kg級表彰式"
+			}, {
+				"en": "Men +80 kg Victory Ceremony",
+				"ja": "男子80kg級表彰式"
+			}]
+		}]
 	}, {
 		"name": {
 			"en": "Wrestling",
@@ -7144,7 +8807,451 @@
 			"zh-Hans": "摔跤",
 			"zh-Hant": "摔跤"
 		},
-		"icon": "wrestling"
+		"icon": "wrestling",
+		"schedule": [{
+			"date": "2021-08-01",
+			"start": "11:00",
+			"end": "13:00",
+			"events": [{
+				"en": "Men's Greco-Roman 60 kg 1/8 Finals",
+				"ja": "男子グレコローマンスタイル60kg級1回戦"
+			}, {
+				"en": "Women's Freestyle 76 kg 1/8 Finals",
+				"ja": "女子フリースタイル76kg級1回戦"
+			}, {
+				"en": "Men's Greco-Roman 130 kg 1/8 Finals",
+				"ja": "男子グレコローマンスタイル130kg級1回戦"
+			}, {
+				"en": "Men's Greco-Roman 60 kg 1/4 Finals",
+				"ja": "男子グレコローマンスタイル60kg級2回戦"
+			}, {
+				"en": "Women's Freestyle 76 kg 1/4 Finals",
+				"ja": "女子フリースタイル76kg級2回戦"
+			}, {
+				"en": "Men's Greco-Roman 130 kg 1/4 Finals",
+				"ja": "男子グレコローマンスタイル130kg級2回戦"
+			}]
+		}, {
+			"date": "2021-08-01",
+			"start": "18:15",
+			"end": "19:15",
+			"events": [{
+				"en": "Men's Greco-Roman 60 kg Semifinals",
+				"ja": "男子グレコローマンスタイル60kg級準決勝"
+			}, {
+				"en": "Men's Greco-Roman 130 kg Semifinals",
+				"ja": "男子グレコローマンスタイル130kg級準決勝"
+			}, {
+				"en": "Women's Freestyle 76 kg Semifinals",
+				"ja": "女子フリースタイル76kg級準決勝"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "11:00",
+			"end": "13:30",
+			"events": [{
+				"en": "Men's Greco-Roman 60 kg Repechage",
+				"ja": "男子グレコローマンスタイル60kg級敗者復活戦"
+			}, {
+				"en": "Women's Freestyle 76 kg Repechage",
+				"ja": "女子フリースタイル76kg級敗者復活戦"
+			}, {
+				"en": "Men's Greco-Roman 130 kg Repechage",
+				"ja": "男子グレコローマンスタイル130kg級敗者復活戦"
+			}, {
+				"en": "Men's Greco-Roman 77 kg 1/8 Finals",
+				"ja": "男子グレコローマンスタイル77kg級1回戦"
+			}, {
+				"en": "Women's Freestyle 68 kg 1/8 Finals",
+				"ja": "女子フリースタイル68kg級1回戦"
+			}, {
+				"en": "Men's Greco-Roman 97 kg 1/8 Finals",
+				"ja": "男子グレコローマンスタイル97kg級1回戦"
+			}, {
+				"en": "Men's Greco-Roman 77 kg 1/4 Finals",
+				"ja": "男子グレコローマンスタイル77kg級2回戦"
+			}, {
+				"en": "Women's Freestyle 68 kg 1/4 Finals",
+				"ja": "女子フリースタイル68kg級2回戦"
+			}, {
+				"en": "Men's Greco-Roman 97 kg 1/4 Finals",
+				"ja": "男子グレコローマンスタイル97kg級2回戦"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "18:15",
+			"end": "22:00",
+			"events": [{
+				"en": "Men's Greco-Roman 77 kg Semifinals",
+				"ja": "男子グレコローマンスタイル77kg級準決勝"
+			}, {
+				"en": "Men's Greco-Roman 97 kg Semifinals",
+				"ja": "男子グレコローマンスタイル97kg級準決勝"
+			}, {
+				"en": "Women's Freestyle 68 kg Semifinals",
+				"ja": "女子フリースタイル68kg級準決勝"
+			}, {
+				"en": "Men's Greco-Roman 60 kg Bronze Medal Matches",
+				"ja": "男子グレコローマンスタイル60kg級3位決定戦"
+			}, {
+				"en": "Men's Greco-Roman 60 kg Final",
+				"ja": "男子グレコローマンスタイル60kg級決勝"
+			}, {
+				"en": "Men's Greco-Roman 130 kg Bronze Medal Matches",
+				"ja": "男子グレコローマンスタイル130kg級3位決定戦"
+			}, {
+				"en": "Men's Greco-Roman 130 kg Final",
+				"ja": "男子グレコローマンスタイル130kg級決勝"
+			}, {
+				"en": "Men's Greco-Roman 60 kg Victory Ceremony",
+				"ja": "男子グレコローマンスタイル60kg級表彰式"
+			}, {
+				"en": "Women's Freestyle 76 kg Bronze Medal Matches",
+				"ja": "女子フリースタイル76kg級3位決定戦"
+			}, {
+				"en": "Women's Freestyle 76 kg Final",
+				"ja": "女子フリースタイル76kg級決勝"
+			}, {
+				"en": "Men's Greco-Roman 130 kg Victory Ceremony",
+				"ja": "男子グレコローマンスタイル130kg級表彰式"
+			}, {
+				"en": "Women's Freestyle 76 kg Victory Ceremony",
+				"ja": "女子フリースタイル76kg級表彰式"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "11:00",
+			"end": "13:30",
+			"events": [{
+				"en": "Men's Greco-Roman 77 kg Repechage",
+				"ja": "男子グレコローマンスタイル77kg級敗者復活戦"
+			}, {
+				"en": "Women's Freestyle 68 kg Repechage",
+				"ja": "女子フリースタイル68kg級敗者復活戦"
+			}, {
+				"en": "Men's Greco-Roman 97 kg Repechage",
+				"ja": "男子グレコローマンスタイル97kg級敗者復活戦"
+			}, {
+				"en": "Men's Greco-Roman 67 kg 1/8 Finals",
+				"ja": "男子グレコローマンスタイル67kg級1回戦"
+			}, {
+				"en": "Women's Freestyle 62 kg 1/8 Finals",
+				"ja": "女子フリースタイル62kg級1回戦"
+			}, {
+				"en": "Men's Greco-Roman 87 kg 1/8 Finals",
+				"ja": "男子グレコローマンスタイル87kg級1回戦"
+			}, {
+				"en": "Men's Greco-Roman 67 kg 1/4 Finals",
+				"ja": "男子グレコローマンスタイル67kg級2回戦"
+			}, {
+				"en": "Women's Freestyle 62 kg 1/4 Finals",
+				"ja": "女子フリースタイル62kg級2回戦"
+			}, {
+				"en": "Men's Greco-Roman 87 kg 1/4 Finals",
+				"ja": "男子グレコローマンスタイル87kg級2回戦"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "18:15",
+			"end": "22:00",
+			"events": [{
+				"en": "Men's Greco-Roman 67 kg Semifinals",
+				"ja": "男子グレコローマンスタイル67kg級準決勝"
+			}, {
+				"en": "Men's Greco-Roman 87 kg Semifinals",
+				"ja": "男子グレコローマンスタイル87kg級準決勝"
+			}, {
+				"en": "Women's Freestyle 62 kg Semifinals",
+				"ja": "女子フリースタイル62kg級準決勝"
+			}, {
+				"en": "Men's Greco-Roman 77 kg Bronze Medal Matches",
+				"ja": "男子グレコローマンスタイル77kg級3位決定戦"
+			}, {
+				"en": "Men's Greco-Roman 77 kg Final",
+				"ja": "男子グレコローマンスタイル77kg級決勝"
+			}, {
+				"en": "Men's Greco-Roman 97 kg Bronze Medal Matches",
+				"ja": "男子グレコローマンスタイル97kg級3位決定戦"
+			}, {
+				"en": "Men's Greco-Roman 97 kg Final",
+				"ja": "男子グレコローマンスタイル97kg級決勝"
+			}, {
+				"en": "Men's Greco-Roman 77 kg Victory Ceremony",
+				"ja": "男子グレコローマンスタイル77kg級表彰式"
+			}, {
+				"en": "Women's Freestyle 68 kg Bronze Medal Matches",
+				"ja": "女子フリースタイル68kg級3位決定戦"
+			}, {
+				"en": "Women's Freestyle 68 kg Final",
+				"ja": "女子フリースタイル68kg級決勝"
+			}, {
+				"en": "Men's Greco-Roman 97 kg Victory Ceremony",
+				"ja": "男子グレコローマンスタイル97kg級表彰式"
+			}, {
+				"en": "Women's Freestyle 68 kg Victory Ceremony",
+				"ja": "女子フリースタイル68kg級表彰式"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "11:00",
+			"end": "13:30",
+			"events": [{
+				"en": "Men's Greco-Roman 67 kg Repechage",
+				"ja": "男子グレコローマンスタイル67kg級敗者復活戦"
+			}, {
+				"en": "Women's Freestyle 62 kg Repechage",
+				"ja": "女子フリースタイル62kg級敗者復活戦"
+			}, {
+				"en": "Men's Greco-Roman 87 kg Repechage",
+				"ja": "男子グレコローマンスタイル87kg級敗者復活戦"
+			}, {
+				"en": "Men's Freestyle 57 kg 1/8 Finals",
+				"ja": "男子フリースタイル57kg級1回戦"
+			}, {
+				"en": "Women's Freestyle 57 kg 1/8 Finals",
+				"ja": "女子フリースタイル57kg級1回戦"
+			}, {
+				"en": "Men's Freestyle 86 kg 1/8 Finals",
+				"ja": "男子フリースタイル86kg級1回戦"
+			}, {
+				"en": "Men's Freestyle 57 kg 1/4 Finals",
+				"ja": "男子フリースタイル57kg級2回戦"
+			}, {
+				"en": "Women's Freestyle 57 kg 1/4 Finals",
+				"ja": "女子フリースタイル57kg級2回戦"
+			}, {
+				"en": "Men's Freestyle 86 kg 1/4 Finals",
+				"ja": "男子フリースタイル86kg級2回戦"
+			}]
+		}, {
+			"date": "2021-08-04",
+			"start": "18:15",
+			"end": "22:00",
+			"events": [{
+				"en": "Men's Freestyle 57 kg Semifinals",
+				"ja": "男子フリースタイル57kg級準決勝"
+			}, {
+				"en": "Men's Freestyle 86 kg Semifinals",
+				"ja": "男子フリースタイル86kg級準決勝"
+			}, {
+				"en": "Women's Freestyle 57 kg Semifinals",
+				"ja": "女子フリースタイル57kg級準決勝"
+			}, {
+				"en": "Men's Greco-Roman 67 kg Bronze Medal Matches",
+				"ja": "男子グレコローマンスタイル67kg級3位決定戦"
+			}, {
+				"en": "Men's Greco-Roman 67 kg Final",
+				"ja": "男子グレコローマンスタイル67kg級決勝"
+			}, {
+				"en": "Men's Greco-Roman 87 kg Bronze Medal Matches",
+				"ja": "男子グレコローマンスタイル87kg級3位決定戦"
+			}, {
+				"en": "Men's Greco-Roman 87 kg Final",
+				"ja": "男子グレコローマンスタイル87kg級決勝"
+			}, {
+				"en": "Men's Greco-Roman 67 kg Victory Ceremony",
+				"ja": "男子グレコローマンスタイル67kg級表彰式"
+			}, {
+				"en": "Women's Freestyle 62 kg Bronze Medal Matches",
+				"ja": "女子フリースタイル62kg級3位決定戦"
+			}, {
+				"en": "Women's Freestyle 62 kg Final",
+				"ja": "女子フリースタイル62kg級決勝"
+			}, {
+				"en": "Men's Greco-Roman 87 kg Victory Ceremony",
+				"ja": "男子グレコローマンスタイル87kg級表彰式"
+			}, {
+				"en": "Women's Freestyle 62 kg Victory Ceremony",
+				"ja": "女子フリースタイル62kg級表彰式"
+			}]
+		}, {
+			"date": "2021-08-05",
+			"start": "11:00",
+			"end": "13:30",
+			"events": [{
+				"en": "Men's Freestyle 57 kg Repechage",
+				"ja": "男子フリースタイル57kg級敗者復活戦"
+			}, {
+				"en": "Women's Freestyle 57 kg Repechage",
+				"ja": "女子フリースタイル57kg級敗者復活戦"
+			}, {
+				"en": "Men's Freestyle 86 kg Repechage",
+				"ja": "男子フリースタイル86kg級敗者復活戦"
+			}, {
+				"en": "Men's Freestyle 74 kg 1/8 Finals",
+				"ja": "男子フリースタイル74kg級1回戦"
+			}, {
+				"en": "Women's Freestyle 53 kg 1/8 Finals",
+				"ja": "女子フリースタイル53kg級1回戦"
+			}, {
+				"en": "Men's Freestyle 125 kg 1/8 Finals",
+				"ja": "男子フリースタイル125kg級1回戦"
+			}, {
+				"en": "Men's Freestyle 74 kg 1/4 Finals",
+				"ja": "男子フリースタイル74kg級2回戦"
+			}, {
+				"en": "Women's Freestyle 53 kg 1/4 Finals",
+				"ja": "女子フリースタイル53kg級2回戦"
+			}, {
+				"en": "Men's Freestyle 125 kg 1/4 Finals",
+				"ja": "男子フリースタイル125kg級2回戦"
+			}]
+		}, {
+			"date": "2021-08-05",
+			"start": "18:15",
+			"end": "22:00",
+			"events": [{
+				"en": "Men's Freestyle 74 kg Semifinals",
+				"ja": "男子フリースタイル74kg級準決勝"
+			}, {
+				"en": "Men's Freestyle 125 kg Semifinals",
+				"ja": "男子フリースタイル125kg級準決勝"
+			}, {
+				"en": "Women's Freestyle 53 kg Semifinals",
+				"ja": "女子フリースタイル53kg級準決勝"
+			}, {
+				"en": "Men's Freestyle 57 kg Bronze Medal Matches",
+				"ja": "男子フリースタイル57kg級3位決定戦"
+			}, {
+				"en": "Men's Freestyle 57 kg Final",
+				"ja": "男子フリースタイル57kg級決勝"
+			}, {
+				"en": "Men's Freestyle 86 kg Bronze Medal Matches",
+				"ja": "男子フリースタイル86kg級3位決定戦"
+			}, {
+				"en": "Men's Freestyle 86 kg Final",
+				"ja": "男子フリースタイル86kg級決勝"
+			}, {
+				"en": "Men's Freestyle 57 kg Victory Ceremony",
+				"ja": "男子フリースタイル57kg級表彰式"
+			}, {
+				"en": "Women's Freestyle 57 kg Bronze Medal Matches",
+				"ja": "女子フリースタイル57kg級3位決定戦"
+			}, {
+				"en": "Women's Freestyle 57 kg Final",
+				"ja": "女子フリースタイル57kg級決勝"
+			}, {
+				"en": "Men's Freestyle 86 kg Victory Ceremony",
+				"ja": "男子フリースタイル86kg級表彰式"
+			}, {
+				"en": "Women's Freestyle 57 kg Victory Ceremony",
+				"ja": "女子フリースタイル57kg級表彰式"
+			}]
+		}, {
+			"date": "2021-08-06",
+			"start": "11:00",
+			"end": "13:30",
+			"events": [{
+				"en": "Men's Freestyle 74 kg Repechage",
+				"ja": "男子フリースタイル74kg級敗者復活戦"
+			}, {
+				"en": "Women's Freestyle 53 kg Repechage",
+				"ja": "女子フリースタイル53kg級敗者復活戦"
+			}, {
+				"en": "Men's Freestyle 125 kg Repechage",
+				"ja": "男子フリースタイル125kg級敗者復活戦"
+			}, {
+				"en": "Men's Freestyle 65 kg 1/8 Finals",
+				"ja": "男子フリースタイル65kg級1回戦"
+			}, {
+				"en": "Women's Freestyle 50 kg 1/8 Finals",
+				"ja": "女子フリースタイル50kg級1回戦"
+			}, {
+				"en": "Men's Freestyle 97 kg 1/8 Finals",
+				"ja": "男子フリースタイル97kg級1回戦"
+			}, {
+				"en": "Men's Freestyle 65 kg 1/4 Finals",
+				"ja": "男子フリースタイル65kg級2回戦"
+			}, {
+				"en": "Women's Freestyle 50 kg 1/4 Finals",
+				"ja": "女子フリースタイル50kg級2回戦"
+			}, {
+				"en": "Men's Freestyle 97 kg 1/4 Finals",
+				"ja": "男子フリースタイル97kg級2回戦"
+			}]
+		}, {
+			"date": "2021-08-06",
+			"start": "18:15",
+			"end": "22:00",
+			"events": [{
+				"en": "Men's Freestyle 65 kg Semifinals",
+				"ja": "男子フリースタイル65kg級準決勝"
+			}, {
+				"en": "Men's Freestyle 97 kg Semifinals",
+				"ja": "男子フリースタイル97kg級準決勝"
+			}, {
+				"en": "Women's Freestyle 50 kg Semifinals",
+				"ja": "女子フリースタイル50kg級準決勝"
+			}, {
+				"en": "Men's Freestyle 74 kg Bronze Medal Matches",
+				"ja": "男子フリースタイル74kg級3位決定戦"
+			}, {
+				"en": "Men's Freestyle 74 kg Final",
+				"ja": "男子フリースタイル74kg級決勝"
+			}, {
+				"en": "Men's Freestyle 125 kg Bronze Medal Matches",
+				"ja": "男子フリースタイル125kg級3位決定戦"
+			}, {
+				"en": "Men's Freestyle 125 kg Final",
+				"ja": "男子フリースタイル125kg級決勝"
+			}, {
+				"en": "Men's Freestyle 74 kg Victory Ceremony",
+				"ja": "男子フリースタイル74kg級表彰式"
+			}, {
+				"en": "Women's Freestyle 53 kg Bronze Medal Matches",
+				"ja": "女子フリースタイル53kg級3位決定戦"
+			}, {
+				"en": "Women's Freestyle 53 kg Final",
+				"ja": "女子フリースタイル53kg級決勝"
+			}, {
+				"en": "Men's Freestyle 125 kg Victory Ceremony",
+				"ja": "男子フリースタイル125kg級表彰式"
+			}, {
+				"en": "Women's Freestyle 53 kg Victory Ceremony",
+				"ja": "女子フリースタイル53kg級表彰式"
+			}]
+		}, {
+			"date": "2021-08-07",
+			"start": "18:45",
+			"end": "22:00",
+			"events": [{
+				"en": "Men's Freestyle 65 kg Repechage",
+				"ja": "男子フリースタイル65kg級敗者復活戦"
+			}, {
+				"en": "Women's Freestyle 50 kg Repechage",
+				"ja": "女子フリースタイル50kg級敗者復活戦"
+			}, {
+				"en": "Men's Freestyle 97 kg Repechage",
+				"ja": "男子フリースタイル97kg級敗者復活戦"
+			}, {
+				"en": "Men's Freestyle 65 kg Bronze Medal Matches",
+				"ja": "男子フリースタイル65kg級3位決定戦"
+			}, {
+				"en": "Men's Freestyle 65 kg Final",
+				"ja": "男子フリースタイル65kg級決勝"
+			}, {
+				"en": "Men's Freestyle 97 kg Bronze Medal Matches",
+				"ja": "男子フリースタイル97kg級3位決定戦"
+			}, {
+				"en": "Men's Freestyle 97 kg Final",
+				"ja": "男子フリースタイル97kg級決勝"
+			}, {
+				"en": "Men's Freestyle 65 kg Victory Ceremony",
+				"ja": "男子フリースタイル65kg級表彰式"
+			}, {
+				"en": "Women's Freestyle 50 kg Bronze Medal Matches",
+				"ja": "女子フリースタイル50kg級3位決定戦"
+			}, {
+				"en": "Women's Freestyle 50 kg Final",
+				"ja": "女子フリースタイル50kg級決勝"
+			}, {
+				"en": "Men's Freestyle 97 kg Victory Ceremony",
+				"ja": "男子フリースタイル97kg級表彰式"
+			}, {
+				"en": "Women's Freestyle 50 kg Victory Ceremony",
+				"ja": "女子フリースタイル50kg級表彰式"
+			}]
+		}]
 	}],
 	"thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Makuhari_Messe%2C_North_hall_1%28cropped%29.jpg/300px-Makuhari_Messe%2C_North_hall_1%28cropped%29.jpg",
 	"center": [140.03468, 35.64701],
