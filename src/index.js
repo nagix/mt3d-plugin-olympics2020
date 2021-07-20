@@ -79,6 +79,23 @@ const styleHTML = `
     .olympics-theme-matsuba-2 {
         background: linear-gradient(180deg, #3F683D 0%, #3F683D 60%, #2A6261 60%, #2A6261 100%);
     }
+    .olympics-ctrl {
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        color: #fff;
+        pointer-events: auto;
+    }
+    .olympics-count {
+        display: inline-block;
+        font-size: 150%;
+        padding: 2px 6px;
+        border-radius: 3px;
+        background-color: #B11D33;
+    }
 `;
 
 const modelOrigin = MercatorCoordinate.fromLngLat([139.7670, 35.6814]);
@@ -153,6 +170,143 @@ class OlympicsLayer extends ThreeLayer {
     }
 }
 
+class OlympicsControl {
+
+    constructor(options) {
+        const me = this,
+            {lang, clock} = options;
+
+        me._lang = lang;
+        me._clock = clock;
+        me._dict = {
+            en: {
+                'count-down': '$1<br>to Tokyo Olympics',
+                'count-down-days': 'days',
+                'count-up': 'Tokyo Olympics',
+                'count-up-days': 'Day $1',
+            },
+            ja: {
+                'count-down': '東京オリンピックまで<br>$1',
+                'count-down-days': '日',
+                'count-up': '東京オリンピック',
+                'count-up-days': '$1日目'
+            },
+            ko: {
+                'count-down': '도쿄올림픽까지<br>$1',
+                'count-down-days': '일',
+                'count-up': '도쿄올림픽',
+                'count-up-days': '$1일차'
+            },
+            ne: {
+                'count-down': 'टोकियो ओलम्पिक सम्म<br>$1',
+                'count-down-days': 'दिन',
+                'count-up': 'टोकियो ओलम्पिक',
+                'count-up-days': 'दिवस $1'
+            },
+            th: {
+                'count-down': '$1<br>สู่โตเกียวโอลิมปิก',
+                'count-down-days': 'วัน',
+                'count-up': 'โตเกียวโอลิมปิก',
+                'count-up-days': 'วันที่ $1'
+            },
+            'zh-Hans': {
+                'count-down': '距离东京奥运会还有<br>$1',
+                'count-down-days': '天',
+                'count-up': '东京奥运会',
+                'count-up-days': '第$1天'
+            },
+            'zh-Hant': {
+                'count-down': '距離東京奧運會還有<br>$1',
+                'count-down-days': '天',
+                'count-up': '東京奧運會',
+                'count-up-days': '第$1天'
+            }
+        };
+        me._timestamps = {
+            olympics: {
+                base: 1626966000000,  // 2021-07-23 00:00:00.000
+                start: 1627038000000, // 2021-07-23 20:00:00.000
+                end: 1628431200000    // 2021-08-08 23:00:00.000
+            }
+        };
+    }
+
+    getDefaultPosition() {
+        return 'top-left';
+    }
+
+    onAdd(map) {
+        const me = this;
+
+        me._map = map;
+
+        me._container = document.createElement('div');
+        me._container.className = 'olympics-ctrl';
+
+        const repeat = () => {
+            const now = me._clock.getTime();
+
+            if (Math.floor(now / 1000) !== Math.floor(me._lastRefresh / 1000)) {
+                me._refresh();
+                me._lastRefresh = now;
+            }
+            if (me._container) {
+                requestAnimationFrame(repeat);
+            }
+        };
+
+        repeat();
+
+        return me._container;
+    }
+
+    onRemove() {
+        const me = this;
+
+        me._container.parentNode.removeChild(me._container);
+        me._container = undefined;
+        me._map = undefined;
+    }
+
+    _refresh() {
+        const me = this,
+            dict = me._dict[me._lang] || me._dict.en,
+            container = me._container,
+            timestamps = me._timestamps,
+            time = me._clock.getTime();
+
+        if (time < timestamps.olympics.start) {
+            const millis = timestamps.olympics.start - time + 1000,
+                count = [
+                    '<span class="olympics-count">',
+                    Math.floor(millis / 86400000),
+                    dict['count-down-days'],
+                    ' ',
+                    `0${Math.floor(millis / 3600000 % 24)}`.slice(-2),
+                    ':',
+                    `0${Math.floor(millis / 60000 % 60)}`.slice(-2),
+                    ':',
+                    `0${Math.floor(millis / 1000 % 60)}`.slice(-2),
+                    '</span>'
+                ].join('');
+
+            container.innerHTML = dict['count-down'].replace('$1', count);
+        } else if (time < timestamps.olympics.end) {
+            const millis = time - timestamps.olympics.base;
+
+            container.innerHTML = [
+                dict['count-up'],
+                '<br><span class="olympics-count">',
+                dict['count-up-days'].replace('$1', Math.floor(millis / 86400000)),
+                '</span>'
+            ].join('');
+        }
+
+        container.style.display = time < timestamps.olympics.end ? 'block' : 'none';
+    }
+
+}
+
 class OlympicsPanel extends Panel {
 
     constructor(options) {
@@ -161,13 +315,14 @@ class OlympicsPanel extends Panel {
 
     addTo(mt3d) {
         const me = this,
+            {lang} = mt3d,
             {name, sports} = me._options.venue;
 
-        me.setTitle(name[mt3d.lang])
+        me.setTitle(name[lang])
             .setHTML((sports || []).map(sport => [
                 '<div class="olympics-sport-row">',
                 `<div class="olympics-theme-${sport.theme}-1 olympics-icon ${sport.icon}-icon"></div>`,
-                `<div class="olympics-theme-${sport.theme}-2 olympics-sport-title">${sport.name[mt3d.lang] || sport.name.en}</div>`,
+                `<div class="olympics-theme-${sport.theme}-2 olympics-sport-title">${sport.name[lang] || sport.name.en}</div>`,
                 '</div>',
                 '<div">',
                 (sport.schedule || []).map(item => [
@@ -176,7 +331,7 @@ class OlympicsPanel extends Panel {
                     '<ul>',
                     (item.events || []).map(event => [
                         '<li>',
-                        event[mt3d.lang] || event.en,
+                        event[lang] || event.en,
                         '</li>'
                     ].join('')).join(''),
                     '</ul>',
@@ -231,8 +386,13 @@ class OlympicsPlugin extends Plugin {
     }
 
     onAdd(mt3d) {
-        mt3d.map.addLayer(this._layer, 'poi');
-        mt3d.map.setLayerZoomRange(this.id, 14, 24);
+        const me = this,
+            {map, lang, clock} = mt3d;
+
+        map.addLayer(me._layer, 'poi');
+        map.setLayerZoomRange(me.id, 14, 24);
+
+        me._olympicsCtrl = new OlympicsControl({lang, clock});
     }
 
     onRemove(mt3d) {
@@ -247,6 +407,7 @@ class OlympicsPlugin extends Plugin {
         mt3d.on('clockmode', me._clockModeEventListener);
         me._addMarkers(olympics);
         me.setVisibility(true);
+        mt3d.map.addControl(me._olympicsCtrl);
 
         const repeat = () => {
             const now = mt3d.clock.getTime();
@@ -276,6 +437,7 @@ class OlympicsPlugin extends Plugin {
         mt3d.off('clockmode', me._clockModeEventListener);
         mt3d.off('click', me._clickEventListener);
         me.setVisibility(false);
+        mt3d.map.removeControl(me._olympicsCtrl);
     }
 
     setVisibility(visible) {
