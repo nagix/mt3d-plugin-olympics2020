@@ -203,7 +203,7 @@
 				"ja": "女子三段跳表彰式"
 			}, {
 				"en": "Men's Long Jump Final",
-				"ja": "女子三段跳表彰式"
+				"ja": "男子走幅跳決勝"
 			}, {
 				"en": "Women's 200m Round 1",
 				"ja": "女子200m予選"
@@ -3574,7 +3574,7 @@
 				"en": "Women's Pool C, Australia vs Japan",
 				"ja": "女子予選ラウンド - プールC オーストラリア vs 日本"
 			}, {
-				"en": "Women's Pool A, ROC* vs Great Britain",
+				"en": "Women's Pool A, ROC vs Great Britain",
 				"ja": "女子予選ラウンド - プールA ROC vs 英国"
 			}, {
 				"en": "Women's Pool A, New Zealand vs Kenya",
@@ -3600,7 +3600,7 @@
 				"en": "Women's Pool A, New Zealand vs Great Britain",
 				"ja": "女子予選ラウンド - プールA ニュージーランド vs 英国"
 			}, {
-				"en": "Women's Pool A, ROC* vs Kenya",
+				"en": "Women's Pool A, ROC vs Kenya",
 				"ja": "女子予選ラウンド - プールA ROC vs ケニア"
 			}]
 		}, {
@@ -10511,6 +10511,38 @@
 				"ja": "野球オープニングラウンド - グループB イスラエル vs 大韓民国"
 			}]
 		}, {
+			"date": "2021-07-30",
+			"start": "12:00",
+			"end": "15:00",
+			"events": [{
+				"en": "Baseball Opening Round Group A, Mexico vs Dominican Rep.",
+				"ja": "野球オープニングラウンド - グループA メキシコ vs ドミニカ共和国"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "19:00",
+			"end": "22:00",
+			"events": [{
+				"en": "Baseball Opening Round Group B, United States vs Israel",
+				"ja": "野球オープニングラウンド - グループB アメリカ合衆国 vs イスラエル"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "12:00",
+			"end": "15:00",
+			"events": [{
+				"en": "Baseball Opening Round Group A, Japan vs メキシコ",
+				"ja": "野球オープニングラウンド - グループA 日本 vs ドミニカ共和国"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "19:00",
+			"end": "22:00",
+			"events": [{
+				"en": "Baseball Opening Round Group B, Republic of Korea vs United States",
+				"ja": "野球オープニングラウンド - グループB 大韓民国 vs アメリカ合衆国"
+			}]
+		}, {
 			"date": "2021-08-01",
 			"start": "12:00",
 			"end": "15:00",
@@ -10619,7 +10651,81 @@
 			"zh-Hans": "足球",
 			"zh-Hant": "足球"
 		},
-		"icon": "football"
+		"icon": "football",
+		"schedule": [{
+			"date": "2021-07-24",
+			"start": "17:30",
+			"end": "22:30",
+			"events": [{
+				"en": "Women's Group G, Sweden vs Australia",
+				"ja": "女子一次ラウンド - グループG スウェーデン vs オーストラリア"
+			}, {
+				"en": "Women's Group G, New Zealand vs United States",
+				"ja": "女子一次ラウンド - グループG ニュージーランド vs アメリカ合衆国"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "17:00",
+			"end": "22:00",
+			"events": [{
+				"en": "Men's Group A, France vs South Africa",
+				"ja": "男子一次ラウンド - グループA フランス vs 南アフリカ"
+			}, {
+				"en": "Men's Group A, Japan vs Mexico",
+				"ja": "男子一次ラウンド - グループA 日本 vs メキシコ"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "20:30",
+			"end": "22:30",
+			"events": [{
+				"en": "Women's Group F, Brazil vs Zambia",
+				"ja": "女子一次ラウンド - グループF ブラジル vs ザンビア"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "17:00",
+			"end": "22:00",
+			"events": [{
+				"en": "Men's Group D, Saudi Arabia vs Brazil",
+				"ja": "男子一次ラウンド - グループD サウジアラビア vs ブラジル"
+			}, {
+				"en": "Men's Group C, Spain vs Argentina",
+				"ja": "男子一次ラウンド - グループC スペイン vs アルゼンチン"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "19:00",
+			"end": "22:00",
+			"events": [{
+				"en": "Women's Quarterfinal",
+				"ja": "女子準々決勝"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "19:00",
+			"end": "22:00",
+			"events": [{
+				"en": "Men's Quarterfinal",
+				"ja": "男子準々決勝"
+			}]
+		}, {
+			"date": "2021-08-03",
+			"start": "20:00",
+			"end": "23:00",
+			"events": [{
+				"en": "Men's Semifinal",
+				"ja": "男子準決勝"
+			}]
+		}, {
+			"date": "2021-08-06",
+			"start": "20:00",
+			"end": "23:00",
+			"events": [{
+				"en": "Men's Bronze Medal Match",
+				"ja": "男子3位決定戦"
+			}]
+		}]
 	}],
 	"thumbnail": "https://upload.wikimedia.org/wikipedia/ja/thumb/5/57/%E5%9F%BC%E7%8E%89%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%A2%E3%83%A02002%EF%BC%88%E6%AD%A3%E9%9D%A2%EF%BC%89.jpg/300px-%E5%9F%BC%E7%8E%89%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%A2%E3%83%A02002%EF%BC%88%E6%AD%A3%E9%9D%A2%EF%BC%89.jpg",
 	"center": [139.71759, 35.9031],
@@ -10645,7 +10751,84 @@
 			"zh-Hans": "足球",
 			"zh-Hant": "足球"
 		},
-		"icon": "football"
+		"icon": "football",
+		"schedule": [{
+			"date": "2021-07-22",
+			"start": "17:30",
+			"end": "22:30",
+			"events": [{
+				"en": "Men's Group D, Côte d'Ivoire vs Saudi Arabia",
+				"ja": "男子一次ラウンド - グループD コートジボワール vs サウジアラビア"
+			}, {
+				"en": "Men's Group D, Brazil vs Germany",
+				"ja": "男子一次ラウンド - グループD ブラジル vs ドイツ"
+			}]
+		}, {
+			"date": "2021-07-25",
+			"start": "17:30",
+			"end": "22:30",
+			"events": [{
+				"en": "Men's Group D, Brazil vs Côte d'Ivoire",
+				"ja": "男子一次ラウンド - グループD ブラジル vs コートジボワール"
+			}, {
+				"en": "Men's Group D, Saudi Arabia vs Germany",
+				"ja": "男子一次ラウンド - グループD サウジアラビア vs ドイツ"
+			}]
+		}, {
+			"date": "2021-07-27",
+			"start": "20:30",
+			"end": "22:30",
+			"events": [{
+				"en": "Women's Group F, Netherlands vs China",
+				"ja": "女子一次ラウンド - グループF オランダ vs 中国"
+			}]
+		}, {
+			"date": "2021-07-28",
+			"start": "17:30",
+			"end": "22:30",
+			"events": [{
+				"en": "Men's Group B, Republic of Korea vs Honduras",
+				"ja": "男子一次ラウンド - グループB 大韓民国 vs ホンジュラス"
+			}, {
+				"en": "Men's Group A, France vs Japan",
+				"ja": "男子一次ラウンド - グループA フランス vs 日本"
+			}]
+		}, {
+			"date": "2021-07-30",
+			"start": "20:00",
+			"end": "23:00",
+			"events": [{
+				"en": "Women's Quarterfinal",
+				"ja": "女子準々決勝"
+			}]
+		}, {
+			"date": "2021-07-31",
+			"start": "20:00",
+			"end": "23:00",
+			"events": [{
+				"en": "Men's Quarterfinal",
+				"ja": "男子準々決勝"
+			}]
+		}, {
+			"date": "2021-08-02",
+			"start": "20:00",
+			"end": "23:00",
+			"events": [{
+				"en": "Women's Semifinal",
+				"ja": "女子準決勝"
+			}]
+		}, {
+			"date": "2021-08-07",
+			"start": "20:30",
+			"end": "23:30",
+			"events": [{
+				"en": "Men's Gold Medal Match",
+				"ja": "男子決勝戦"
+			}, {
+				"en": "Men's Victory Ceremony",
+				"ja": "男子表彰式"
+			}]
+		}]
 	}],
 	"thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Nissan_International_Stadium_Yokohama.jpg/300px-Nissan_International_Stadium_Yokohama.jpg",
 	"center": [139.60639, 35.50994],
