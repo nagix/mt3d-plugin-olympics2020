@@ -15,13 +15,34 @@ const styleHTML = `
     .olympics-panel.closed {
         height: 0 !important;
     }
+    .olympics-sport-row {
+        display: table;
+        width: 100%;
+        margin: 6px 0;
+    }
+    .olympics-sport-row>div {
+        display: table-cell;
+        height: 38px;
+    }
+    .olympics-sport-title {
+        padding-left: 6px;
+        font-weight: bold;
+        line-height: 38px;
+    }
     .olympics-icon {
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        margin-right: 6px;
+        width: 38px;
+        height: 38px;
         background: no-repeat center/32px;
-        vertical-align: middle;
+    }
+    .olympics-schedule-row {
+        padding: 6px 0;
+    }
+    .olympics-schedule-row:hover {
+        background-color: rgba(102, 102, 102, 0.7);
+    }
+    .olympics-schedule-row ul {
+        margin: 6px 0;
+        padding-left: 24px;
     }
     .olympics-marker {
         width: 40px;
@@ -33,6 +54,30 @@ const styleHTML = `
     }
     .olympics-marker-active {
         border-color: #33B5E5;
+    }
+    .olympics-theme-kurenai-1 {
+        background-color: #782E2F;
+    }
+    .olympics-theme-kurenai-2 {
+        background: linear-gradient(180deg, #B82D2F 0%, #B82D2F 60%, #922430 60%, #922430 100%);
+    }
+    .olympics-theme-ai-1 {
+        background-color: #1B3563;
+    }
+    .olympics-theme-ai-2 {
+        background: linear-gradient(180deg, #3982B7 0%, #3982B7 60%, #1E4B94 60%, #1E4B94 100%);
+    }
+    .olympics-theme-fuji-1 {
+        background-color: #592860;
+    }
+    .olympics-theme-fuji-2 {
+        background: linear-gradient(180deg, #804487 0%, #804487 60%, #AA4D84 60%, #AA4D84 100%);
+    }
+    .olympics-theme-matsuba-1 {
+        background-color: #245259;
+    }
+    .olympics-theme-matsuba-2 {
+        background: linear-gradient(180deg, #3F683D 0%, #3F683D 60%, #2A6261 60%, #2A6261 100%);
     }
 `;
 
@@ -50,7 +95,7 @@ const style = document.createElement('style');
 style.innerHTML = [
     styleHTML,
     ...Object.keys(SVG).map(key => [
-        `.${key}-icon {background-image: url("${addColor(SVG[key], 'white')}");}`,
+        `.${key}-icon {background-image: url("${addColor(SVG[key], '#fff')}");}`,
         `.olympics-marker.${key}-icon {background-image: url("${addColor(SVG[key], '#B11D33')}");}`,
         `.olympics-marker-active.${key}-icon {background-image: url("${addColor(SVG[key], '#33B5E5')}");}`
     ].join('\n'))
@@ -120,15 +165,14 @@ class OlympicsPanel extends Panel {
 
         me.setTitle(name[mt3d.lang])
             .setHTML((sports || []).map(sport => [
-                '<div style="line-height: 32px;">',
-                `<div class="olympics-icon ${sport.icon}-icon"></div>`,
-                `<div style="display: inline-block; vertical-align: middle;">${sport.name[mt3d.lang] || sport.name.en}</div>`,
+                '<div class="olympics-sport-row">',
+                `<div class="olympics-theme-${sport.theme}-1 olympics-icon ${sport.icon}-icon"></div>`,
+                `<div class="olympics-theme-${sport.theme}-2 olympics-sport-title">${sport.name[mt3d.lang] || sport.name.en}</div>`,
                 '</div>',
-                '<div>',
+                '<div">',
                 (sport.schedule || []).map(item => [
-                    '<div>',
-                    `${item.date} ${item.start} - ${item.end}`,
-                    '</div>',
+                    '<div class="olympics-schedule-row">',
+                    `<div>${item.date} ${item.start} - ${item.end}</div>`,
                     '<ul>',
                     (item.events || []).map(event => [
                         '<li>',
@@ -136,6 +180,7 @@ class OlympicsPanel extends Panel {
                         '</li>'
                     ].join('')).join(''),
                     '</ul>',
+                    '</div>'
                 ].join('')).join(''),
                 '</div>'
             ].join('')).join(''));

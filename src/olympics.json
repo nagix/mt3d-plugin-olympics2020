@@ -18,6 +18,7 @@
 			"zh-Hant": "開幕式"
 		},
 		"icon": "torch",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-23",
 			"start": "20:00",
@@ -32,6 +33,7 @@
 			"zh-Hant": "田徑"
 		},
 		"icon": "athletics",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-30",
 			"start": "09:00",
@@ -596,6 +598,7 @@
 			"zh-Hant": "足球"
 		},
 		"icon": "football",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-08-06",
 			"start": "11:00",
@@ -617,6 +620,7 @@
 			"zh-Hant": "閉幕式"
 		},
 		"icon": "torch",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-08-08",
 			"start": "20:00",
@@ -648,6 +652,7 @@
 			"zh-Hant": "乒乓球"
 		},
 		"icon": "table-tennis",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "9:00",
@@ -1045,6 +1050,7 @@
 			"zh-Hant": "手球"
 		},
 		"icon": "handball",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "9:00",
@@ -1536,6 +1542,7 @@
 			"zh-Hant": "柔道"
 		},
 		"icon": "judo",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "11:00",
@@ -1941,6 +1948,7 @@
 			"zh-Hant": "空手道"
 		},
 		"icon": "karate",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-08-05",
 			"start": "10:00",
@@ -2095,6 +2103,7 @@
 			"zh-Hant": "舉重"
 		},
 		"icon": "weightlifting",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "9:50",
@@ -2356,6 +2365,7 @@
 			"zh-Hant": "拳擊"
 		},
 		"icon": "boxing",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "11:00",
@@ -2862,6 +2872,7 @@
 			"zh-Hant": "馬術"
 		},
 		"icon": "equestrian",
+		"theme": "fuji",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "17:00",
@@ -3006,6 +3017,7 @@
 			"zh-Hant": "羽毛球"
 		},
 		"icon": "badminton",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "9:00",
@@ -3320,6 +3332,7 @@
 			"zh-Hant": "現代五項"
 		},
 		"icon": "modern-pentathlon",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-08-05",
 			"start": "13:00",
@@ -3358,6 +3371,7 @@
 			"zh-Hant": "足球"
 		},
 		"icon": "football",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-21",
 			"start": "17:30",
@@ -3390,6 +3404,7 @@
 			"zh-Hant": "現代五項"
 		},
 		"icon": "modern-pentathlon",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-08-06",
 			"start": "14:30",
@@ -3440,6 +3455,7 @@
 			"zh-Hant": "橄欖球"
 		},
 		"icon": "rugby",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-26",
 			"start": "9:00",
@@ -3701,6 +3717,7 @@
 			"zh-Hant": "公路自行車"
 		},
 		"icon": "cycling-road",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "11:00",
@@ -3744,6 +3761,7 @@
 			"zh-Hant": "排球"
 		},
 		"icon": "volleyball",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "9:00",
@@ -4235,6 +4253,7 @@
 			"zh-Hant": "競技體操"
 		},
 		"icon": "artistic-gymnastics",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "10:00",
@@ -4412,6 +4431,7 @@
 			"zh-Hant": "藝術體操"
 		},
 		"icon": "rhythmic-gymnastics",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-08-06",
 			"start": "10:20",
@@ -4468,6 +4488,7 @@
 			"zh-Hant": "蹦床"
 		},
 		"icon": "trampoline-gymnastics",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-07-30",
 			"start": "13:00",
@@ -4523,6 +4544,7 @@
 			"zh-Hant": "自由式小輪車"
 		},
 		"icon": "bmx-freestyle",
+		"theme": "fuji",
 		"schedule": [{
 			"date": "2021-07-31",
 			"start": "10:10",
@@ -4561,6 +4583,7 @@
 			"zh-Hant": "小輪車競速"
 		},
 		"icon": "cycling-bmx",
+		"theme": "matsuba",
 		"schedule": [{
 			"date": "2021-07-29",
 			"start": "10:00",
@@ -4605,6 +4628,7 @@
 			"zh-Hant": "滑板"
 		},
 		"icon": "skateboarding",
+		"theme": "fuji",
 		"schedule": [{
 			"date": "2021-07-25",
 			"start": "9:00",
@@ -4688,6 +4712,7 @@
 			"zh-Hant": "網球"
 		},
 		"icon": "tennis",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "11:00",
@@ -4886,6 +4911,7 @@
 			"zh-Hant": "馬拉松游泳"
 		},
 		"icon": "marathon-swimming",
+		"theme": "matsuba",
 		"schedule": [{
 			"date": "2021-08-04",
 			"start": "6:30",
@@ -4918,6 +4944,7 @@
 			"zh-Hant": "鐵人三項"
 		},
 		"icon": "triathlon",
+		"theme": "matsuba",
 		"schedule": [{
 			"date": "2021-07-26",
 			"start": "6:30",
@@ -4978,6 +5005,7 @@
 			"zh-Hant": "沙灘排球"
 		},
 		"icon": "beach-volleyball",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "9:00",
@@ -5340,6 +5368,7 @@
 			"zh-Hant": "三人籃球"
 		},
 		"icon": "basketball-3x3",
+		"theme": "fuji",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "10:15",
@@ -5633,6 +5662,7 @@
 			"zh-Hant": "攀岩"
 		},
 		"icon": "sport-climbing",
+		"theme": "fuji",
 		"schedule": [{
 			"date": "2021-08-03",
 			"start": "17:00",
@@ -5722,6 +5752,7 @@
 			"zh-Hant": "曲棍球"
 		},
 		"icon": "hockey",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "9:30",
@@ -6111,6 +6142,7 @@
 			"zh-Hant": "馬術"
 		},
 		"icon": "equestrian",
+		"theme": "fuji",
 		"schedule": [{
 			"date": "2021-08-01",
 			"start": "7:45",
@@ -6146,6 +6178,7 @@
 			"zh-Hant": "皮划艇靜水"
 		},
 		"icon": "canoe-sprint",
+		"theme": "matsuba",
 		"schedule": [{
 			"date": "2021-08-02",
 			"start": "9:30",
@@ -6360,6 +6393,7 @@
 			"zh-Hant": "賽艇"
 		},
 		"icon": "rowing",
+		"theme": "matsuba",
 		"schedule": [{
 			"date": "2021-07-23",
 			"start": "8:30",
@@ -6703,6 +6737,7 @@
 			"zh-Hant": "皮划艇激流迴旋"
 		},
 		"icon": "canoeing-slalom",
+		"theme": "matsuba",
 		"schedule": [{
 			"date": "2021-07-25",
 			"start": "13:00",
@@ -6808,6 +6843,7 @@
 			"zh-Hant": "射箭"
 		},
 		"icon": "archery",
+		"theme": "fuji",
 		"schedule": [{
 			"date": "2021-07-23",
 			"start": "9:00",
@@ -7057,6 +7093,7 @@
 			"zh-Hant": "花樣游泳"
 		},
 		"icon": "artistic-swimming",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-08-02",
 			"start": "19:30",
@@ -7113,6 +7150,7 @@
 			"zh-Hant": "跳水"
 		},
 		"icon": "diving",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-07-25",
 			"start": "15:00",
@@ -7275,6 +7313,7 @@
 			"zh-Hant": "游泳"
 		},
 		"icon": "swimming",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "19:00",
@@ -7752,6 +7791,7 @@
 			"zh-Hant": "水球"
 		},
 		"icon": "water-polo",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "14:00",
@@ -8190,6 +8230,7 @@
 			"zh-Hant": "擊劍"
 		},
 		"icon": "fencing",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "9:00",
@@ -8590,6 +8631,7 @@
 			"zh-Hant": "跆拳道"
 		},
 		"icon": "taekwondo",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "10:00",
@@ -8808,6 +8850,7 @@
 			"zh-Hant": "摔跤"
 		},
 		"icon": "wrestling",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-08-01",
 			"start": "11:00",
@@ -9278,6 +9321,7 @@
 			"zh-Hant": "衝浪"
 		},
 		"icon": "surfing",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-07-25",
 			"start": "7:00",
@@ -9373,6 +9417,7 @@
 			"zh-Hant": "籃球"
 		},
 		"icon": "basketball",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-25",
 			"start": "10:00",
@@ -9822,6 +9867,7 @@
 			"zh-Hant": "射擊"
 		},
 		"icon": "shooting",
+		"theme": "fuji",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "8:30",
@@ -10052,6 +10098,7 @@
 			"zh-Hant": "高爾夫"
 		},
 		"icon": "golf",
+		"theme": "fuji",
 		"schedule": [{
 			"date": "2021-07-29",
 			"start": "7:30",
@@ -10149,6 +10196,7 @@
 			"zh-Hant": "帆船"
 		},
 		"icon": "sailing",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-07-25",
 			"start": "12:00",
@@ -10426,6 +10474,7 @@
 			"zh-Hant": "棒球/壘球"
 		},
 		"icon": "baseball",
+		"theme": "ai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "10:00",
@@ -10652,6 +10701,7 @@
 			"zh-Hant": "足球"
 		},
 		"icon": "football",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-24",
 			"start": "17:30",
@@ -10752,6 +10802,7 @@
 			"zh-Hant": "足球"
 		},
 		"icon": "football",
+		"theme": "kurenai",
 		"schedule": [{
 			"date": "2021-07-22",
 			"start": "17:30",
