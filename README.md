@@ -1,6 +1,8 @@
 # Tokyo 2020 Olympics plugin for Mini Tokyo 3D
 
-Tokyo 2020 Olympics plugin shows olympic game venues and the event schedule in the [Mini Tokyo 3D](https://minitokyo3d.com) map.
+Tokyo 2020 Olympics plugin shows the Olympic competition venues and the event schedule in the [Mini Tokyo 3D](https://minitokyo3d.com) map.
+
+![Screenshot](https://nagix.github.io/mt3d-plugin-olympics2020/screenshot1.jpg)
 
 ## How to Use
 
@@ -11,7 +13,7 @@ First, load the Mini Tokyo 3D and this plugin within the `<head>` element of the
 <script src="path/to/mt3d-plugin-olympics2020/dist/mt3d-plugin-olympics2020.min.js"></script>
 ```
 
-Then, create a MiniTokyo3D instance specifying the `plugins` propery, which is the array containing the plugin instance returned by `mt3dOlympics2020()`.
+Then, create a MiniTokyo3D instance specifying the `plugins` property, which is the array containing the plugin instance returned by `mt3dOlympics2020()`.
 
 ```html
 <div id="map" style="width: 400px; height: 400px;"></div>
@@ -22,6 +24,13 @@ Then, create a MiniTokyo3D instance specifying the `plugins` propery, which is t
     });
 </script>
 ```
+
+## About Data
+
+The 3D model of the Olympic Stadium used in this plugin is sourced from [ARCHITECTURE GRAVURE](https://christinayan01.jp/architecture/archives/14112#).
+
+_Copyright (c) 2021 christinayan by Takahiro Yanai<br>Released under the MIT license_
+
 
 ## How to Build
 
