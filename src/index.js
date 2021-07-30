@@ -3,6 +3,7 @@ import SVG from './svg/index';
 import olympics from './olympics.json';
 
 const DATA_URL = 'https://minitokyo3d.com/data';
+const TRANSITION_DURATION = 300;
 const REFRESH_INTERVAL = 60000;
 const OLYMPIC_STADIUM_LNG_LAT = [139.7143859, 35.6778094];
 
@@ -167,6 +168,15 @@ class OlympicsLayer extends ThreeLayer {
 
         me.light.color = color;
         me.ambientLight.color = color;
+    }
+
+    setOpacity(opacity) {
+        this.scene.traverse(({isMesh, material}) => {
+            if (isMesh) {
+                material.opacity = opacity;
+                material.alphaTest = opacity < 1 ? 0 : .5;
+            }
+        });
     }
 }
 
@@ -383,6 +393,9 @@ class OlympicsPlugin extends Plugin {
         me._clockModeEventListener = () => {
             me.setVisibility(true);
         };
+        me._viewModeEventListener = e => {
+            me._onViewModeChanged(e.mode);
+        };
     }
 
     onAdd(mt3d) {
@@ -405,6 +418,7 @@ class OlympicsPlugin extends Plugin {
 
         mt3d.on('click', me._clickEventListener);
         mt3d.on('clockmode', me._clockModeEventListener);
+        mt3d.on('viewmode', me._viewModeEventListener);
         me._addMarkers(olympics);
         me.setVisibility(true);
         mt3d.map.addControl(me._olympicsCtrl);
@@ -434,6 +448,7 @@ class OlympicsPlugin extends Plugin {
         }
         me.markers = [];
 
+        mt3d.off('viewmode', me._viewModeEventListener);
         mt3d.off('clockmode', me._clockModeEventListener);
         mt3d.off('click', me._clickEventListener);
         me.setVisibility(false);
@@ -448,6 +463,25 @@ class OlympicsPlugin extends Plugin {
             marker.getElement().style.visibility = visible ? 'visible' : 'hidden';
         }
         me._mt3d.map.setLayoutProperty(me.id, 'visibility', visible ? 'visible' : 'none');
+    }
+
+    _onViewModeChanged(mode) {
+        const me = this,
+            opacities = mode === 'underground' ? [1, .1] : [.1, 1],
+            start = performance.now();
+
+        const repeat = () => {
+            const elapsed = Math.min(performance.now() - start, TRANSITION_DURATION),
+                opacity = opacities[0] + elapsed / TRANSITION_DURATION * (opacities[1] - opacities[0]);
+
+            me._layer.setOpacity(opacity);
+
+            if (elapsed < TRANSITION_DURATION) {
+                requestAnimationFrame(repeat);
+            }
+        };
+
+        repeat();
     }
 
     _addMarkers(venues) {
