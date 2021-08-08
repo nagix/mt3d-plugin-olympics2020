@@ -54,7 +54,7 @@ const styleHTML = `
         background: white no-repeat center/34px;
         cursor: pointer;
     }
-    .olympics-marker-active {
+    .olympics-marker.active, .olympics-marker:hover {
         border-color: #33B5E5;
     }
     .olympics-theme-kurenai-1 {
@@ -112,7 +112,7 @@ style.innerHTML = [
     ...Object.keys(SVG).map(key => [
         `.${key}-icon {background-image: url("${addColor(SVG[key], '#fff')}");}`,
         `.olympics-marker.${key}-icon {background-image: url("${addColor(SVG[key], '#B11D33')}");}`,
-        `.olympics-marker-active.${key}-icon {background-image: url("${addColor(SVG[key], '#33B5E5')}");}`
+        `.olympics-marker.active.${key}-icon, .olympics-marker:hover.${key}-icon {background-image: url("${addColor(SVG[key], '#33B5E5')}");}`
     ].join('\n'))
 ].join('\n');
 document.head.appendChild(style);
@@ -323,9 +323,9 @@ class OlympicsPanel extends Panel {
         super(Object.assign({className: 'olympics-panel'}, options));
     }
 
-    addTo(mt3d) {
+    addTo(map) {
         const me = this,
-            {lang} = mt3d,
+            {lang} = map,
             {name, sports} = me._options.venue;
 
         me.setTitle(name[lang])
@@ -349,19 +349,9 @@ class OlympicsPanel extends Panel {
                 ].join('')).join(''),
                 '</div>'
             ].join('')).join(''));
-        return super.addTo(mt3d);
+        return super.addTo(map);
     }
 
-}
-
-function updateMarkerElement(element, highlight) {
-    const {classList} = element;
-
-    if (highlight) {
-        classList.add('olympics-marker-active');
-    } else {
-        classList.remove('olympics-marker-active');
-    }
 }
 
 class OlympicsPlugin extends Plugin {
@@ -386,48 +376,44 @@ class OlympicsPlugin extends Plugin {
             backgroundImage: `url("${addColor(SVG.torch, 'white')}")`
         };
         me._layer = new OlympicsLayer(me.id);
-        me.markers = [];
+        me.markers = {};
         me._clickEventListener = () => {
             me._updatePanel();
-        };
-        me._clockModeEventListener = () => {
-            me.setVisibility(true);
         };
         me._viewModeEventListener = e => {
             me._onViewModeChanged(e.mode);
         };
     }
 
-    onAdd(mt3d) {
+    onAdd(map) {
         const me = this,
-            {map, lang, clock} = mt3d;
+            {map: mbox, lang, clock} = map;
 
-        map.addLayer(me._layer, 'poi');
-        map.setLayerZoomRange(me.id, 14, 24);
+        mbox.addLayer(me._layer, 'poi');
+        mbox.setLayerZoomRange(me.id, 14, 24);
 
         me._olympicsCtrl = new OlympicsControl({lang, clock});
     }
 
-    onRemove(mt3d) {
-        mt3d.map.removeLayer(this._layer);
+    onRemove(map) {
+        map.map.removeLayer(this._layer);
     }
 
     onEnabled() {
         const me = this,
-            mt3d = me._mt3d;
+            map = me._map;
 
-        mt3d.on('click', me._clickEventListener);
-        mt3d.on('clockmode', me._clockModeEventListener);
-        mt3d.on('viewmode', me._viewModeEventListener);
+        map.on('click', me._clickEventListener);
+        map.on('viewmode', me._viewModeEventListener);
         me._addMarkers(olympics);
         me.setVisibility(true);
-        mt3d.map.addControl(me._olympicsCtrl);
+        map.map.addControl(me._olympicsCtrl);
 
         const repeat = () => {
-            const now = mt3d.clock.getTime();
+            const now = map.clock.getTime();
 
             if (Math.floor(now / REFRESH_INTERVAL) !== Math.floor(me.lastRefresh / REFRESH_INTERVAL)) {
-                me._layer.setLightColor(mt3d.getLightColor());
+                me._layer.setLightColor(map.getLightColor());
                 me.lastRefresh = now;
             }
             if (me.enabled) {
@@ -440,29 +426,28 @@ class OlympicsPlugin extends Plugin {
 
     onDisabled() {
         const me = this,
-            mt3d = me._mt3d;
+            map = me._map;
 
         me._updatePanel();
-        for (const marker of me.markers) {
-            marker.remove();
+        for (const id of Object.keys(me.markers)) {
+            me.markers[id].remove();
+            delete me.markers[id];
         }
-        me.markers = [];
 
-        mt3d.off('viewmode', me._viewModeEventListener);
-        mt3d.off('clockmode', me._clockModeEventListener);
-        mt3d.off('click', me._clickEventListener);
+        map.off('viewmode', me._viewModeEventListener);
+        map.off('click', me._clickEventListener);
         me.setVisibility(false);
-        mt3d.map.removeControl(me._olympicsCtrl);
+        map.map.removeControl(me._olympicsCtrl);
     }
 
     setVisibility(visible) {
         const me = this;
 
         me._updatePanel();
-        for (const marker of me.markers) {
-            marker.getElement().style.visibility = visible ? 'visible' : 'hidden';
+        for (const id of Object.keys(me.markers)) {
+            me.markers[id].setVisibility(visible);
         }
-        me._mt3d.map.setLayoutProperty(me.id, 'visibility', visible ? 'visible' : 'none');
+        me._map.map.setLayoutProperty(me.id, 'visibility', visible ? 'visible' : 'none');
     }
 
     _onViewModeChanged(mode) {
@@ -486,97 +471,58 @@ class OlympicsPlugin extends Plugin {
 
     _addMarkers(venues) {
         const me = this,
-            mt3d = me._mt3d,
-            {lang, map} = mt3d;
+            map = me._map,
+            {lang} = map;
 
         for (const venue of venues) {
             const {center, zoom, bearing, pitch, id, name, sports, thumbnail} = venue,
                 element = document.createElement('div');
             let popup;
 
-            element.id = `venue-${id}`;
             element.className = `olympics-marker ${sports[0].icon}-icon`;
-            element.addEventListener('click', event => {
-                me._updatePanel(venue);
-                if (popup) {
-                    popup.remove();
-                    popup = undefined;
-                }
-                mt3d.trackObject();
-                mt3d._setViewMode('ground');
-                map.flyTo({
-                    center,
-                    zoom,
-                    bearing,
-                    pitch
-                });
 
-                event.stopPropagation();
-            });
-            element.addEventListener('mouseenter', () => {
-                updateMarkerElement(element, true);
-                popup = new Popup({
-                    className: 'popup-object',
-                    closeButton: false,
-                    closeOnClick: false,
-                    maxWidth: '300px',
-                    offset: {
-                        top: [0, 10],
-                        bottom: [0, -30]
-                    },
-                    openingAnimation: {
-                        duration: 300,
-                        easing: 'easeOutBack'
+            me.markers[id] = new Marker({element})
+                .setLngLat(center)
+                .addTo(map)
+                .on('click', () => {
+                    me._updatePanel(venue);
+                    map.setViewMode('ground');
+                    map.flyTo({center, zoom, bearing, pitch});
+                })
+                .on('mouseenter', () => {
+                    popup = new Popup()
+                        .setLngLat(center)
+                        .setHTML([
+                            '<div class="thumbnail-image-container">',
+                            '<div class="ball-pulse"><div></div><div></div><div></div></div>',
+                            `<div class="thumbnail-image" style="background-image: url(\'${thumbnail}\');"></div>`,
+                            '</div>',
+                            `<div><strong>${name[lang]}</strong></div>`
+                        ].join(''))
+                        .addTo(map);
+                })
+                .on('mouseleave', () => {
+                    if (popup) {
+                        popup.remove();
+                        popup = undefined;
                     }
                 });
-                popup.setLngLat(center)
-                    .setHTML([
-                        '<div class="thumbnail-image-container">',
-                        '<div class="ball-pulse"><div></div><div></div><div></div></div>',
-                        `<div class="thumbnail-image" style="background-image: url(\'${thumbnail}\');"></div>`,
-                        '</div>',
-                        `<div><strong>${name[lang]}</strong></div>`
-                    ].join(''))
-                    .addTo(map);
-            });
-            element.addEventListener('mouseleave', () => {
-                updateMarkerElement(element, me.selectedVenue === id);
-                if (popup) {
-                    popup.remove();
-                    popup = undefined;
-                }
-            });
-            element.addEventListener('mousemove', event => {
-                mt3d.markObject();
-                event.stopPropagation();
-            });
-
-            me.markers.push(
-                new Marker(element)
-                    .setLngLat(center)
-                    .addTo(map)
-            );
         }
     }
 
     _updatePanel(venue) {
         const me = this,
-            mt3d = me._mt3d,
             {id} = venue || {};
 
         if (me.selectedVenue !== id && me.panel) {
-            const element = mt3d.container.querySelector(`#venue-${me.selectedVenue}`);
-
-            updateMarkerElement(element);
+            me.markers[me.selectedVenue].setActivity(false);
             me.panel.remove();
             delete me.panel;
             delete me.selectedVenue;
         }
         if (!me.selectedVenue && venue) {
-            const element = mt3d.container.querySelector(`#venue-${id}`);
-
-            updateMarkerElement(element, true);
-            me.panel = new OlympicsPanel({venue}).addTo(mt3d);
+            me.markers[id].setActivity(true);
+            me.panel = new OlympicsPanel({venue}).addTo(me._map);
             me.selectedVenue = id;
         }
     }
