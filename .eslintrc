@@ -74,7 +74,6 @@
       "ignorePrivate": true
     }
   },
-  "ignorePatterns": ["src/spe"],
   "globals": {
     "performance": true
   },

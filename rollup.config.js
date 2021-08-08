@@ -1,7 +1,6 @@
 import fs from 'fs';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import replace from '@rollup/plugin-replace';
 import image from '@rollup/plugin-image';
 import json from '@rollup/plugin-json';
 import {terser} from 'rollup-plugin-terser';
@@ -28,14 +27,10 @@ export default [{
 			'mini-tokyo-3d': 'mt3d'
 		}
 	},
-	external: ['fs', 'util', 'module', 'path', 'child_process', 'mini-tokyo-3d'],
+	external: ['mini-tokyo-3d'],
 	plugins: [
 		resolve(),
 		commonjs(),
-		replace({
-			'process.env.NODE_ENV': '\'development\'',
-			'log.error': '//log.error'
-		}),
 		image(),
 		json()
 	]
@@ -52,14 +47,10 @@ export default [{
 			'mini-tokyo-3d': 'mt3d'
 		}
 	},
-	external: ['fs', 'util', 'module', 'path', 'child_process', 'mini-tokyo-3d'],
+	external: ['mini-tokyo-3d'],
 	plugins: [
 		resolve(),
 		commonjs(),
-		replace({
-			'process.env.NODE_ENV': '\'production\'',
-			'log.error': '//log.error'
-		}),
 		image(),
 		json(),
 		terser({
