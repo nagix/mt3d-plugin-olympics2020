@@ -1,104 +1,12 @@
 import {Marker, Panel, Plugin, Popup, ThreeLayer, TextureLoader, MeshPhongMaterial, GLTFLoader} from 'mini-tokyo-3d';
 import SVG from './svg/index';
 import olympics from './olympics.json';
+import './olympics.css';
 
 const DATA_URL = 'https://minitokyo3d.com/data';
 const TRANSITION_DURATION = 300;
 const REFRESH_INTERVAL = 60000;
 const OLYMPIC_STADIUM_LNG_LAT = [139.7143859, 35.6778094];
-
-const styleHTML = `
-    .olympics-panel {
-        height: 262px !important;
-    }
-    .olympics-panel.collapsed {
-        height: 50px !important;
-    }
-    .olympics-panel.closed {
-        height: 0 !important;
-    }
-    .olympics-sport-row {
-        display: table;
-        width: 100%;
-        margin: 6px 0;
-    }
-    .olympics-sport-row>div {
-        display: table-cell;
-        height: 38px;
-    }
-    .olympics-sport-title {
-        padding-left: 6px;
-        font-weight: bold;
-        line-height: 38px;
-    }
-    .olympics-icon {
-        width: 38px;
-        height: 38px;
-        background: no-repeat center/32px;
-    }
-    .olympics-schedule-row {
-        padding: 6px 0;
-    }
-    .olympics-schedule-row:hover {
-        background-color: rgba(102, 102, 102, 0.7);
-    }
-    .olympics-schedule-row ul {
-        margin: 6px 0;
-        padding-left: 24px;
-    }
-    .olympics-marker {
-        width: 40px;
-        height: 40px;
-        border: 2px solid #B11D33;
-        border-radius: 50%;
-        background: white no-repeat center/34px;
-        cursor: pointer;
-    }
-    .olympics-marker.active, .olympics-marker:hover {
-        border-color: #33B5E5;
-    }
-    .olympics-theme-kurenai-1 {
-        background-color: #782E2F;
-    }
-    .olympics-theme-kurenai-2 {
-        background: linear-gradient(180deg, #B82D2F 0%, #B82D2F 60%, #922430 60%, #922430 100%);
-    }
-    .olympics-theme-ai-1 {
-        background-color: #1B3563;
-    }
-    .olympics-theme-ai-2 {
-        background: linear-gradient(180deg, #3982B7 0%, #3982B7 60%, #1E4B94 60%, #1E4B94 100%);
-    }
-    .olympics-theme-fuji-1 {
-        background-color: #592860;
-    }
-    .olympics-theme-fuji-2 {
-        background: linear-gradient(180deg, #804487 0%, #804487 60%, #AA4D84 60%, #AA4D84 100%);
-    }
-    .olympics-theme-matsuba-1 {
-        background-color: #245259;
-    }
-    .olympics-theme-matsuba-2 {
-        background: linear-gradient(180deg, #3F683D 0%, #3F683D 60%, #2A6261 60%, #2A6261 100%);
-    }
-    .olympics-ctrl {
-        margin-top: 10px;
-        margin-left: 10px;
-        padding: 10px;
-        border-radius: 3px;
-        background-color: rgba(0, 0, 0, 0.7);
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        color: #fff;
-        pointer-events: auto;
-    }
-    .olympics-count {
-        display: inline-block;
-        font-size: 150%;
-        padding: 2px 6px;
-        border-radius: 3px;
-        background-color: #B11D33;
-    }
-`;
 
 function addColor(url, color) {
     const encodedColor = color.replace('#', '%23');
@@ -107,14 +15,12 @@ function addColor(url, color) {
 
 // Add style
 const style = document.createElement('style');
-style.innerHTML = [
-    styleHTML,
-    ...Object.keys(SVG).map(key => [
-        `.${key}-icon {background-image: url("${addColor(SVG[key], '#fff')}");}`,
-        `.olympics-marker.${key}-icon {background-image: url("${addColor(SVG[key], '#B11D33')}");}`,
-        `.olympics-marker.active.${key}-icon, .olympics-marker:hover.${key}-icon {background-image: url("${addColor(SVG[key], '#33B5E5')}");}`
-    ].join('\n'))
-].join('\n');
+style.type = 'text/css';
+style.innerHTML = Object.keys(SVG).map(key => [
+    `.${key}-icon {background-image: url("${addColor(SVG[key], '#fff')}");}`,
+    `.olympics-marker.${key}-icon {background-image: url("${addColor(SVG[key], '#B11D33')}");}`,
+    `.olympics-marker.active.${key}-icon, .olympics-marker:hover.${key}-icon {background-image: url("${addColor(SVG[key], '#33B5E5')}");}`
+].join('\n'));
 document.head.appendChild(style);
 
 class OlympicsLayer extends ThreeLayer {
@@ -124,9 +30,10 @@ class OlympicsLayer extends ThreeLayer {
 
         const me = this,
             loader = new GLTFLoader(),
-            texture = new TextureLoader().load(`${DATA_URL}/NewOlympicStadium2_d.png`),
-            alphaMap = new TextureLoader().load(`${DATA_URL}/NewOlympicStadium2_a.png`),
-            normalMap = new TextureLoader().load(`${DATA_URL}/NewOlympicStadium2_n.png`);
+            textureLoader = new TextureLoader(),
+            texture = textureLoader.load(`${DATA_URL}/NewOlympicStadium2_d.png`),
+            alphaMap = textureLoader.load(`${DATA_URL}/NewOlympicStadium2_a.png`),
+            normalMap = textureLoader.load(`${DATA_URL}/NewOlympicStadium2_n.png`);
 
         texture.flipY = false;
         alphaMap.flipY = false;

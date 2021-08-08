@@ -5,6 +5,7 @@ import image from '@rollup/plugin-image';
 import json from '@rollup/plugin-json';
 import {terser} from 'rollup-plugin-terser';
 import strip from '@rollup/plugin-strip';
+import postcss from 'rollup-plugin-postcss';
 
 const pkg = JSON.parse(fs.readFileSync('package.json'));
 const banner = `/*!
@@ -30,6 +31,7 @@ export default [{
 	external: ['mini-tokyo-3d'],
 	plugins: [
 		resolve(),
+		postcss(),
 		commonjs(),
 		image(),
 		json()
@@ -50,6 +52,7 @@ export default [{
 	external: ['mini-tokyo-3d'],
 	plugins: [
 		resolve(),
+		postcss(),
 		commonjs(),
 		image(),
 		json(),
