@@ -66,4 +66,20 @@ export default [{
 			sourceMap: true
 		})
 	]
+}, {
+	input: 'src/index.js',
+	output: {
+		file: pkg.module,
+		format: 'esm',
+		indent: false,
+		banner
+	},
+	external: ['mini-tokyo-3d'],
+	plugins: [
+		resolve(),
+		postcss(),
+		commonjs(),
+		image(),
+		json()
+	]
 }];

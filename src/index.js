@@ -1,7 +1,9 @@
-import {Marker, Panel, Plugin, Popup, ThreeLayer, TextureLoader, MeshPhongMaterial, GLTFLoader} from 'mini-tokyo-3d';
+import {Marker, Panel, Plugin, Popup, THREE, ThreeLayer} from 'mini-tokyo-3d';
 import SVG from './svg/index';
 import olympics from './olympics.json';
 import './olympics.css';
+
+const {DoubleSide, GLTFLoader, MeshPhongMaterial, TextureLoader} = THREE;
 
 const DATA_URL = 'https://minitokyo3d.com/data';
 const TRANSITION_DURATION = 300;
@@ -20,7 +22,7 @@ style.innerHTML = Object.keys(SVG).map(key => [
     `.${key}-icon {background-image: url("${addColor(SVG[key], '#fff')}");}`,
     `.olympics-marker.${key}-icon {background-image: url("${addColor(SVG[key], '#B11D33')}");}`,
     `.olympics-marker.active.${key}-icon, .olympics-marker:hover.${key}-icon {background-image: url("${addColor(SVG[key], '#33B5E5')}");}`
-].join('\n'));
+].join('\n')).join('\n');
 document.head.appendChild(style);
 
 class OlympicsLayer extends ThreeLayer {
@@ -53,7 +55,7 @@ class OlympicsLayer extends ThreeLayer {
                         normalMap,
                         alphaTest: 0.5,
                         transparent: true,
-                        side: 2 // THREE.DoubleSide
+                        side: DoubleSide
                     });
                 }
             });
@@ -159,17 +161,19 @@ class OlympicsControl {
 
         me._container = document.createElement('div');
         me._container.className = 'olympics-ctrl';
+        me._container.style.display = 'none';
 
         const repeat = () => {
             const now = me._clock.getTime();
 
+            if (!me._container) {
+                return;
+            }
             if (Math.floor(now / 1000) !== Math.floor(me._lastRefresh / 1000)) {
                 me._refresh();
                 me._lastRefresh = now;
             }
-            if (me._container) {
-                requestAnimationFrame(repeat);
-            }
+            requestAnimationFrame(repeat);
         };
 
         repeat();
@@ -283,13 +287,11 @@ class OlympicsPlugin extends Plugin {
             backgroundImage: `url("${addColor(SVG.torch, 'white')}")`
         };
         me._layer = new OlympicsLayer(me.id);
+        me.venues = {};
         me.markers = {};
-        me._clickEventListener = () => {
-            me._updatePanel();
-        };
-        me._viewModeEventListener = e => {
-            me._onViewModeChanged(e.mode);
-        };
+        me._onSelection = me._onSelection.bind(me);
+        me._onDeselection = me._onDeselection.bind(me);
+        me._onViewModeChanged = me._onViewModeChanged.bind(me);
     }
 
     onAdd(map) {
@@ -308,12 +310,17 @@ class OlympicsPlugin extends Plugin {
 
     onEnabled() {
         const me = this,
-            map = me._map;
+            map = me._map,
+            venues = me.venues;
 
-        map.on('click', me._clickEventListener);
-        map.on('viewmode', me._viewModeEventListener);
-        me._addMarkers(olympics);
-        me.setVisibility(true);
+        map.on('selection', me._onSelection);
+        map.on('deselection', me._onDeselection);
+        map.on('viewmode', me._onViewModeChanged);
+
+        for (const item of olympics) {
+            venues[item.id] = item;
+        }
+        me._addMarkers();
         map.map.addControl(me._olympicsCtrl);
 
         const repeat = () => {
@@ -335,55 +342,47 @@ class OlympicsPlugin extends Plugin {
         const me = this,
             map = me._map;
 
-        me._updatePanel();
+        map.off('selection', me._onSelection);
+        map.off('deselection', me._onDeselection);
+        map.off('viewmode', me._onViewModeChanged);
+
+        if (me.panel) {
+            me._map.trackObject();
+            me.panel.remove();
+            delete me.panel;
+        }
+
+        for (const id of Object.keys(me.venues)) {
+            delete me.venues[id];
+        }
         for (const id of Object.keys(me.markers)) {
             me.markers[id].remove();
             delete me.markers[id];
         }
-
-        map.off('viewmode', me._viewModeEventListener);
-        map.off('click', me._clickEventListener);
-        me.setVisibility(false);
         map.map.removeControl(me._olympicsCtrl);
     }
 
-    setVisibility(visible) {
+    onVisibilityChanged(visible) {
         const me = this;
 
-        me._updatePanel();
+        if (!visible && me.panel) {
+            me._map.trackObject();
+        }
         for (const id of Object.keys(me.markers)) {
             me.markers[id].setVisibility(visible);
         }
         me._map.map.setLayoutProperty(me.id, 'visibility', visible ? 'visible' : 'none');
     }
 
-    _onViewModeChanged(mode) {
-        const me = this,
-            opacities = mode === 'underground' ? [1, .1] : [.1, 1],
-            start = performance.now();
-
-        const repeat = () => {
-            const elapsed = Math.min(performance.now() - start, TRANSITION_DURATION),
-                opacity = opacities[0] + elapsed / TRANSITION_DURATION * (opacities[1] - opacities[0]);
-
-            me._layer.setOpacity(opacity);
-
-            if (elapsed < TRANSITION_DURATION) {
-                requestAnimationFrame(repeat);
-            }
-        };
-
-        repeat();
-    }
-
-    _addMarkers(venues) {
+    _addMarkers() {
         const me = this,
             map = me._map,
             {lang} = map;
 
-        for (const venue of venues) {
-            const {center, zoom, bearing, pitch, id, name, sports, thumbnail} = venue,
-                element = document.createElement('div');
+        for (const id of Object.keys(me.venues)) {
+            const {center, zoom, bearing, pitch, name, sports, thumbnail} = me.venues[id],
+                element = document.createElement('div'),
+                selection = {id, selectionType: 'olympic-venue'};
             let popup;
 
             element.className = `olympics-marker ${sports[0].icon}-icon`;
@@ -392,9 +391,9 @@ class OlympicsPlugin extends Plugin {
                 .setLngLat(center)
                 .addTo(map)
                 .on('click', () => {
-                    me._updatePanel(venue);
+                    map.trackObject(selection);
                     map.setViewMode('ground');
-                    map.flyTo({center, zoom, bearing, pitch});
+                    map.map.flyTo({center, zoom, bearing, pitch});
                 })
                 .on('mouseenter', () => {
                     popup = new Popup()
@@ -417,21 +416,48 @@ class OlympicsPlugin extends Plugin {
         }
     }
 
-    _updatePanel(venue) {
-        const me = this,
-            {id} = venue || {};
+    _onSelection(event) {
+        if (event.selectionType === 'olympic-venue') {
+            const me = this,
+                {id} = event;
 
-        if (me.selectedVenue !== id && me.panel) {
-            me.markers[me.selectedVenue].setActivity(false);
-            me.panel.remove();
-            delete me.panel;
-            delete me.selectedVenue;
-        }
-        if (!me.selectedVenue && venue) {
             me.markers[id].setActivity(true);
-            me.panel = new OlympicsPanel({venue}).addTo(me._map);
-            me.selectedVenue = id;
+            me.panel = new OlympicsPanel({venue: me.venues[id]}).addTo(me._map);
         }
+    }
+
+    _onDeselection(event) {
+        if (event.selectionType === 'olympic-venue') {
+            const me = this,
+                marker = me.markers[event.id];
+
+            if (marker) {
+                marker.setActivity(false);
+            }
+            if (me.panel) {
+                me.panel.remove();
+                delete me.panel;
+            }
+        }
+    }
+
+    _onViewModeChanged(event) {
+        const me = this,
+            opacities = event.mode === 'underground' ? [1, .1] : [.1, 1],
+            start = performance.now();
+
+        const repeat = () => {
+            const elapsed = Math.min(performance.now() - start, TRANSITION_DURATION),
+                opacity = opacities[0] + elapsed / TRANSITION_DURATION * (opacities[1] - opacities[0]);
+
+            me._layer.setOpacity(opacity);
+
+            if (elapsed < TRANSITION_DURATION) {
+                requestAnimationFrame(repeat);
+            }
+        };
+
+        repeat();
     }
 
 }
