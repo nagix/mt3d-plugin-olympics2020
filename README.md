@@ -9,8 +9,9 @@ Tokyo 2020 Olympics plugin shows the Olympic competition venues and the event sc
 First, load the Mini Tokyo 3D and this plugin within the `<head>` element of the HTML file.
 
 ```html
-<script src="path/to/mini-tokyo-3d/dist/mini-tokyo-3d.min.js"></script>
-<script src="path/to/mt3d-plugin-olympics2020/dist/mt3d-plugin-olympics2020.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mini-tokyo-3d@next/dist/mini-tokyo-3d.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/mini-tokyo-3d@next/dist/mini-tokyo-3d.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mt3d-plugin-olympics2020@latest/dist/mt3d-plugin-olympics2020.min.js"></script>
 ```
 
 Then, create a MiniTokyo3D instance specifying the `plugins` property, which is the array containing the plugin instance returned by `mt3dOlympics2020()`.
@@ -34,7 +35,7 @@ _Copyright (c) 2021 christinayan by Takahiro Yanai<br>Released under the MIT lic
 
 ## How to Build
 
-The latest version of Node.js is required. Move to the root directory of the plugin, run the following commands, then the plugin scripts will be generated in the `build` directory.
+The latest version of Node.js is required. Move to the root directory of the plugin, run the following commands, then the plugin scripts will be generated in the `dist`. The files in the `data` directory need to be uploaded to the place specified by `DATA_URL` in the source code.
 ```bash
 npm install
 npm run build
