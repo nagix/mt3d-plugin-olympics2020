@@ -1,4 +1,4 @@
-import {Marker, Panel, Plugin, Popup, THREE, ThreeLayer} from 'mini-tokyo-3d';
+import {Marker, Panel, Popup, THREE} from 'mini-tokyo-3d';
 import SVG from './svg/index';
 import olympics from './olympics.json';
 import './olympics.css';
@@ -25,12 +25,22 @@ style.innerHTML = Object.keys(SVG).map(key => [
 ].join('\n')).join('\n');
 document.head.appendChild(style);
 
-class OlympicsLayer extends ThreeLayer {
+class OlympicsLayer {
 
-    onAdd(map, gl) {
-        super.onAdd(map, gl);
+    constructor(options) {
+        const me = this;
 
+        me.id = options.id;
+        me.minzoom = options.minzoom;
+        me.maxzoom = options.maxzoom;
+        me.type = 'three';
+    }
+
+    onAdd(map, context) {
         const me = this,
+            scene = me.scene = context.scene,
+            directionalLight = me.directionalLight = scene.getObjectByProperty('type', 'DirectionalLight'),
+            ambientLight = me.ambientLight = scene.getObjectByProperty('type', 'AmbientLight'),
             loader = new GLTFLoader(),
             textureLoader = new TextureLoader(),
             texture = textureLoader.load(`${DATA_URL}/NewOlympicStadium2_d.png`),
@@ -42,12 +52,12 @@ class OlympicsLayer extends ThreeLayer {
         normalMap.flipY = false;
 
         loader.load(`${DATA_URL}/NewOlympicStadium2.glb`, gltf => {
-            const scene = gltf.scene,
-                {position, scale, rotation} = scene,
-                modelPosition = me.getModelPosition(OLYMPIC_STADIUM_LNG_LAT),
-                modelScale = me.getModelScale();
+            const stadium = gltf.scene,
+                {position, scale, rotation} = stadium,
+                modelPosition = map.getModelPosition(OLYMPIC_STADIUM_LNG_LAT),
+                modelScale = map.getModelScale();
 
-            scene.traverse(child => {
+            stadium.traverse(child => {
                 if (child.isMesh) {
                     child.material = new MeshPhongMaterial({
                         map: texture,
@@ -65,17 +75,17 @@ class OlympicsLayer extends ThreeLayer {
             scale.x = scale.y = scale.z = modelScale;
             rotation.x = Math.PI / 2;
             rotation.y = -1.95;
-            me.scene.add(scene);
+            scene.add(stadium);
         });
 
-        me.light.intensity = 1.8;
-        me.ambientLight.intensity = .9;
+        directionalLight.intensity = 1.8;
+        ambientLight.intensity = .9;
     }
 
     setLightColor(color) {
         const me = this;
 
-        me.light.color = color;
+        me.directionalLight.color = color;
         me.ambientLight.color = color;
     }
 
@@ -265,11 +275,9 @@ class OlympicsPanel extends Panel {
 
 }
 
-class OlympicsPlugin extends Plugin {
+class OlympicsPlugin {
 
-    constructor(options) {
-        super(options);
-
+    constructor() {
         const me = this;
 
         me.id = 'olympics';
@@ -286,7 +294,7 @@ class OlympicsPlugin extends Plugin {
             backgroundSize: '34px',
             backgroundImage: `url("${addColor(SVG.torch, 'white')}")`
         };
-        me._layer = new OlympicsLayer(me.id);
+        me.layer = new OlympicsLayer({id: me.id, minzoom: 14, maxzoom: 24});
         me.venues = {};
         me.markers = {};
         me._onSelection = me._onSelection.bind(me);
@@ -296,22 +304,19 @@ class OlympicsPlugin extends Plugin {
 
     onAdd(map) {
         const me = this,
-            {map: mbox, lang, clock} = map;
+            {lang, clock} = me.map = map;
 
-        mbox.addLayer(me._layer, 'poi');
-        mbox.setLayerZoomRange(me.id, 14, 24);
-
-        me._olympicsCtrl = new OlympicsControl({lang, clock});
+        map.addLayer(me.layer);
+        me.olympicsCtrl = new OlympicsControl({lang, clock});
     }
 
     onRemove(map) {
-        map.map.removeLayer(this._layer);
+        map.removeLayer(this.id);
     }
 
     onEnabled() {
         const me = this,
-            map = me._map,
-            venues = me.venues;
+            {map, venues} = me;
 
         map.on('selection', me._onSelection);
         map.on('deselection', me._onDeselection);
@@ -321,13 +326,13 @@ class OlympicsPlugin extends Plugin {
             venues[item.id] = item;
         }
         me._addMarkers();
-        map.map.addControl(me._olympicsCtrl);
+        map.getMapboxMap().addControl(me.olympicsCtrl);
 
         const repeat = () => {
             const now = map.clock.getTime();
 
             if (Math.floor(now / REFRESH_INTERVAL) !== Math.floor(me.lastRefresh / REFRESH_INTERVAL)) {
-                me._layer.setLightColor(map.getLightColor());
+                me.layer.setLightColor(map.getLightColor());
                 me.lastRefresh = now;
             }
             if (me.enabled) {
@@ -340,14 +345,14 @@ class OlympicsPlugin extends Plugin {
 
     onDisabled() {
         const me = this,
-            map = me._map;
+            {map} = me;
 
         map.off('selection', me._onSelection);
         map.off('deselection', me._onDeselection);
         map.off('viewmode', me._onViewModeChanged);
 
         if (me.panel) {
-            me._map.trackObject();
+            map.trackObject();
             me.panel.remove();
             delete me.panel;
         }
@@ -359,28 +364,29 @@ class OlympicsPlugin extends Plugin {
             me.markers[id].remove();
             delete me.markers[id];
         }
-        map.map.removeControl(me._olympicsCtrl);
+        map.getMapboxMap().removeControl(me.olympicsCtrl);
     }
 
     onVisibilityChanged(visible) {
-        const me = this;
+        const me = this,
+            {map} = me;
 
         if (!visible && me.panel) {
-            me._map.trackObject();
+            map.trackObject();
         }
         for (const id of Object.keys(me.markers)) {
             me.markers[id].setVisibility(visible);
         }
-        me._map.map.setLayoutProperty(me.id, 'visibility', visible ? 'visible' : 'none');
+        map.setLayerVisibility(me.id, visible ? 'visible' : 'none');
     }
 
     _addMarkers() {
         const me = this,
-            map = me._map,
+            {map, venues} = me,
             {lang} = map;
 
-        for (const id of Object.keys(me.venues)) {
-            const {center, zoom, bearing, pitch, name, sports, thumbnail} = me.venues[id],
+        for (const id of Object.keys(venues)) {
+            const {center, zoom, bearing, pitch, name, sports, thumbnail} = venues[id],
                 element = document.createElement('div'),
                 selection = {id, selectionType: 'olympic-venue'};
             let popup;
@@ -393,7 +399,7 @@ class OlympicsPlugin extends Plugin {
                 .on('click', () => {
                     map.trackObject(selection);
                     map.setViewMode('ground');
-                    map.map.flyTo({center, zoom, bearing, pitch});
+                    map.getMapboxMap().flyTo({center, zoom, bearing, pitch});
                 })
                 .on('mouseenter', () => {
                     popup = new Popup()
@@ -419,10 +425,11 @@ class OlympicsPlugin extends Plugin {
     _onSelection(event) {
         if (event.selectionType === 'olympic-venue') {
             const me = this,
+                {map, venues} = me,
                 {id} = event;
 
             me.markers[id].setActivity(true);
-            me.panel = new OlympicsPanel({venue: me.venues[id]}).addTo(me._map);
+            me.panel = new OlympicsPanel({venue: venues[id]}).addTo(map);
         }
     }
 
@@ -450,7 +457,7 @@ class OlympicsPlugin extends Plugin {
             const elapsed = Math.min(performance.now() - start, TRANSITION_DURATION),
                 opacity = opacities[0] + elapsed / TRANSITION_DURATION * (opacities[1] - opacities[0]);
 
-            me._layer.setOpacity(opacity);
+            me.layer.setOpacity(opacity);
 
             if (elapsed < TRANSITION_DURATION) {
                 requestAnimationFrame(repeat);
@@ -462,6 +469,6 @@ class OlympicsPlugin extends Plugin {
 
 }
 
-export default function(options) {
-    return new OlympicsPlugin(options);
+export default function() {
+    return new OlympicsPlugin();
 }
