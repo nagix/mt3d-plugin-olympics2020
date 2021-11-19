@@ -7,7 +7,6 @@ const {DoubleSide, GLTFLoader, MeshPhongMaterial, TextureLoader} = THREE;
 
 const DATA_URL = 'https://minitokyo3d.com/data';
 const TRANSITION_DURATION = 300;
-const REFRESH_INTERVAL = 60000;
 const OLYMPIC_STADIUM_LNG_LAT = [139.7143859, 35.6778094];
 
 function addColor(url, color) {
@@ -39,8 +38,8 @@ class OlympicsLayer {
     onAdd(map, context) {
         const me = this,
             scene = me.scene = context.scene,
-            directionalLight = me.directionalLight = scene.getObjectByProperty('type', 'DirectionalLight'),
-            ambientLight = me.ambientLight = scene.getObjectByProperty('type', 'AmbientLight'),
+            directionalLight = scene.getObjectByProperty('type', 'DirectionalLight'),
+            ambientLight = scene.getObjectByProperty('type', 'AmbientLight'),
             loader = new GLTFLoader(),
             textureLoader = new TextureLoader(),
             texture = textureLoader.load(`${DATA_URL}/NewOlympicStadium2_d.png`),
@@ -80,13 +79,6 @@ class OlympicsLayer {
 
         directionalLight.intensity = 1.8;
         ambientLight.intensity = .9;
-    }
-
-    setLightColor(color) {
-        const me = this;
-
-        me.directionalLight.color = color;
-        me.ambientLight.color = color;
     }
 
     setOpacity(opacity) {
@@ -327,20 +319,6 @@ class OlympicsPlugin {
         }
         me._addMarkers();
         map.getMapboxMap().addControl(me.olympicsCtrl);
-
-        const repeat = () => {
-            const now = map.clock.getTime();
-
-            if (Math.floor(now / REFRESH_INTERVAL) !== Math.floor(me.lastRefresh / REFRESH_INTERVAL)) {
-                me.layer.setLightColor(map.getLightColor());
-                me.lastRefresh = now;
-            }
-            if (me.enabled) {
-                requestAnimationFrame(repeat);
-            }
-        };
-
-        repeat();
     }
 
     onDisabled() {
