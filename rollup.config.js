@@ -11,7 +11,7 @@ const pkg = JSON.parse(fs.readFileSync('package.json'));
 const banner = `/*!
  * mt3d-plugin-olympics2020 v${pkg.version}
  * ${pkg.homepage}
- * (c) ${new Date().getFullYear()} ${pkg.author}
+ * (c) 2021-${new Date().getFullYear()} ${pkg.author}
  * Released under the ${pkg.license} license
  */`;
 
